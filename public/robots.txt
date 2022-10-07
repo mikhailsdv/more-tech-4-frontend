@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Crawl-delay: 1
+Host: testnik.kz
+Disallow: /admin/
+Sitemap: https://testnik.kz/sitemap.xml

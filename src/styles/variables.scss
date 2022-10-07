@@ -1,0 +1,28 @@
+$font-family: "Manrope", "Roboto", "Helvetica", "Arial", sans-serif;
+$transition: all 0.5s cubic-bezier(0.25, 0.8, 0.05, 1);
+
+$header-height: 56px;
+$drawer-open-width: 300px;
+$drawer-minimized-width: 80px;
+
+$background-color: #f3f7fa;
+$accent-color: #0a2896;
+$hover-color: #4789eb;
+$error-color: #da0b20;
+$warning-color: #fcbc00;
+$positive-color: #0fb682;
+$block-placeholder-color: #d4d7df;
+
+//mostly for text
+$emphasis-high: #2f3441;
+$emphasis-medium: #606981;
+$emphasis-outlined: #8a96a8;
+
+$gradient-primary: linear-gradient(90deg, #0037ff 0%, #0085ff 100%);
+$gradient-hovered: linear-gradient(90deg, #1134b5 0%, #2353e0 100%);
+
+$xl: 1920px - 1px;
+$lg: 1280px - 1px;
+$md: 960px - 1px;
+$sm: 600px - 1px;
+$xs: 480px - 1px;
