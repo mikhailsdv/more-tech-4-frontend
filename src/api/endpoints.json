@@ -1,5 +1,10 @@
 [
 	{
+		"name": "whoami",
+		"url": "/whoami",
+		"method": "get"
+	},
+	{
 		"name": "login",
 		"url": "/login",
 		"method": "post",
