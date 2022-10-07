@@ -12,6 +12,7 @@ export default function useApi() {
 		token.current &&
 			request.interceptors.request.use(config => {
 				config.headers.Authorization = `Token ${token.current}`
+				//config.headers.Token = token.current
 				return config
 			})
 	}, [])
@@ -21,19 +22,27 @@ export default function useApi() {
 		endpointsJSON.reduce((acc, endpoint) => {
 			const {name, params, method, url, headers} = endpoint
 			acc[name] = async (args = {}) => {
-				const {data} = await request({
-					url,
-					method,
-					[method === "get" ? "params" : "data"]:
-						params &&
-						params.reduce((acc, param) => {
-							acc[param] = args[param]
-							return acc
-						}, {}),
-					headers,
-				})
+				try {
+					const {data} = await request({
+						url,
+						method,
+						[method === "get" ? "params" : "data"]:
+							params &&
+							params.reduce((acc, param) => {
+								acc[param] = args[param]
+								return acc
+							}, {}),
+						headers,
+					})
 
-				return data
+					return data
+				} catch (err) {
+					if (err?.response?.data) {
+						return err.response.data
+					} else {
+						throw err
+					}
+				}
 			}
 			return acc
 		}, {})
