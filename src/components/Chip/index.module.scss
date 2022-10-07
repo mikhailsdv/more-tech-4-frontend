@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	border-radius: 18px;
+	background-color: rgba(10, 40, 150, 0.08);
+	display: inline-flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 6px 12px;
+	cursor: default;
+	transition: $transition;
+	&:hover {
+		background-color: rgba(10, 40, 150, 0.12);
+	}
+	&.selected {
+		background-color: $accent-color;
+
+		.text,
+		.delete {
+			color: white;
+		}
+	}
+
+	.text,
+	.delete {
+		color: $emphasis-high;
+		//min-height: 14px;
+	}
+
+	.delete {
+		width: 20px;
+		height: 20px;
+		flex: none;
+		cursor: pointer;
+		margin-left: 8px;
+	}
+}

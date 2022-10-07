@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.root {
+	white-space: nowrap;
+	&.inline {
+		display: inline;
+	}
+
+	.amount {
+		margin-right: 4px;
+		display: inline;
+	}
+
+	.icon {
+		position: relative;
+		width: 1em;
+		height: 1em;
+		vertical-align: baseline;
+		top: 6px;
+	}
+}

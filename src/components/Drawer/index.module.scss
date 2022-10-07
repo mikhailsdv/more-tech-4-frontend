@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.paper {
+	width: $drawer-open-width;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-right: 0;
+	padding: 24px;
+	transition: $transition;
+	&[data-open="false"] {
+		width: $drawer-minimized-width;
+		padding: 16px;
+
+		.user {
+			opacity: 0;
+		}
+	}
+
+	.header {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 32px;
+
+		.avatar {
+			width: 48px;
+			height: 48px;
+			flex: none;
+			margin-right: 12px;
+			background-color: $emphasis-outlined;
+			box-shadow: 0 0 0 0 $hover-color;
+			transition: $transition;
+			&.active {
+				box-shadow: 0 0 0 2px $hover-color;
+			}
+		}
+
+		.user {
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+			justify-content: center;
+			transition: $transition;
+		}
+	}
+
+	.sections {
+		position: relative;
+		width: 100%;
+		cursor: pointer;
+	}
+}

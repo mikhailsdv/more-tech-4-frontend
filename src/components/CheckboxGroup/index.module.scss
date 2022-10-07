@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+
+	.row {
+		flex-direction: row;
+
+		.mr {
+			margin-right: 32px;
+		}
+	}
+}

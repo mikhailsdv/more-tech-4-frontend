@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+$section-icon-size: 18px;
+
+.root {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+	overflow: hidden;
+	margin-bottom: 8px;
+
+	.link {
+		position: relative;
+		width: 100%;
+		height: 48px;
+		padding: 12px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		transition: $transition;
+		color: $emphasis-medium;
+		border-radius: 8px;
+		&:hover {
+			background-color: fade-out($hover-color, 0.9);
+		}
+		&[data-active="true"] {
+			background-color: $hover-color;
+
+			.icon,
+			.title {
+				color: white;
+			}
+		}
+		&[data-open="false"] {
+			padding: 16px;
+			.title {
+				opacity: 0;
+			}
+		}
+
+		.icon {
+			flex: none;
+			transition: $transition;
+		}
+
+		.title {
+			position: relative;
+			flex-grow: 1;
+			//transition: $transition;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			margin-left: 12px;
+			transition: $transition;
+		}
+	}
+}
