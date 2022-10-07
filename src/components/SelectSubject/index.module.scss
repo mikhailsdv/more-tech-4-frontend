@@ -1,0 +1,155 @@
+@import "../../styles/variables.scss";
+
+$root-height: 85%;
+
+.backdrop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
+	z-index: 11;
+}
+
+.root {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: $root-height;
+	padding: 0 20px ($bottom-navigation-height + 20px) 20px;
+	background-color: fade-out($light_block-color, 0.3);
+	backdrop-filter: blur(20px);
+	border-radius: 18px 18px 0 0;
+	max-width: $max-width;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 12;
+	user-select: none;
+	transition: $transition;
+	border: 1px solid $light_dark-faded-color;
+	#{$dark-theme} & {
+		backdrop-filter: blur(30px);
+		border: 1px solid $dark_light-faded-color;
+		background-color: fade-out($dark_main-color, 0.3);
+	}
+	&[data-disable-blur="true"] {
+		backdrop-filter: none;
+		background-color: $light_block-color;
+		#{$dark-theme} & {
+			background-color: $dark_main-color;
+		}
+	}
+	&[data-overscrolled="true"][data-open="true"] {
+		transform: translateY($bottom-navigation-height);
+	}
+	&[data-overscrolled="true"][data-open="false"] {
+		transform: translateY(calc(100% - $select-subject-decription-height));
+	}
+	&[data-overscrolled="false"][data-open="true"] {
+		transform: translateY(0px);
+	}
+	&[data-overscrolled="false"][data-open="false"] {
+		transform: translateY(
+			calc(
+				100% - $bottom-navigation-height -
+					$select-subject-decription-height
+			)
+		);
+	}
+
+	&[data-open="true"] {
+		overflow: auto;
+	}
+	&[data-open="false"] {
+		overflow: hidden;
+	}
+	&[data-hidden="true"] {
+		display: none;
+	}
+
+	.description {
+		position: relative;
+		width: 100%;
+		height: $select-subject-decription-height;
+		margin-bottom: unset;
+		display: block;
+		line-height: $select-subject-decription-height;
+		white-space: nowrap;
+		cursor: pointer;
+		margin-bottom: 4px;
+
+		%text {
+			width: 100%;
+			transition: $transition;
+			font-weight: 500;
+			font-size: 18px;
+			letter-spacing: -0.4px;
+		}
+
+		.text {
+			@extend %text;
+			color: fade-out($light_regular-text-color, 0.12);
+			#{$dark-theme} & {
+				color: fade-out($dark_regular-text-color, 0.4);
+			}
+		}
+		.mode {
+			@extend %text;
+			color: $light_main-color;
+			#{$dark-theme} & {
+				color: $dark_regular-text-color;
+			}
+		}
+	}
+
+	.toggle {
+		$toggle-size: 26px;
+		position: sticky;
+		height: $toggle-size;
+		width: $toggle-size;
+		float: right;
+		top: calc(($select-subject-decription-height - $toggle-size) / 2);
+		width: $toggle-size;
+		height: $toggle-size;
+		margin: 0;
+		text-align: center;
+		z-index: 99;
+		cursor: pointer;
+		display: block;
+
+		.icon {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			color: $light_main-color;
+			background-color: fade-out($light_block-color, 0.6);
+			border-radius: 100%;
+			transition: $transition;
+			#{$dark-theme} & {
+				background-color: fade-out($dark_block-color, 0.6);
+				color: fade-out($dark_regular-text-color, 0.4);
+			}
+			&[data-open="true"] {
+				transform: rotate(180deg);
+			}
+			&[data-open="false"] {
+				transform: rotate(0deg);
+			}
+		}
+	}
+
+	.subjects {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		margin-top: 12px;
+
+		.subject {
+			margin-bottom: 12px;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 11;
+	width: 100%;
+	max-width: $max-width;
+	height: 4px;
+	overflow: hidden;
+
+	.progress {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition-property: transform;
+		transition-timing-function: ease-out;
+		transition-duration: 1s;
+		background-color: $dark_regular-text-color;
+		&[data-overscrolled="true"] {
+			background-color: $light_main-color;
+			#{$dark-theme} & {
+				background-color: $dark_regular-text-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+
+	.icon {
+		position: relative;
+		flex: none;
+		width: 24px;
+		height: 24px;
+		margin-top: 4px;
+		margin-right: 20px;
+		color: fade-out($light_placeholder-color, 0.05);
+		#{$dark-theme} & {
+			color: fade-out($dark_placeholder-color, 0.05);
+		}
+	}
+
+	.input {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+
+		.placeholder {
+			color: $light_placeholder-color;
+			width: 100%;
+			font-size: 16px;
+			margin-bottom: 2px;
+			#{$dark-theme} & {
+				color: $dark_placeholder-color;
+			}
+		}
+
+		.options {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+
+			.option {
+				position: relative;
+				background-color: $light_dark-faded-color;
+				color: $light_placeholder-color;
+				width: 46px;
+				height: 46px;
+				font-weight: 500;
+				font-size: 1.1em;
+				margin: 4px 12px 4px 0;
+				#{$dark-theme} & {
+					background-color: $dark_light-faded-color;
+					color: $dark_placeholder-color;
+				}
+
+				&[data-active="true"] {
+					color: #fff;
+					background-color: $light_main-color;
+					#{$dark-theme} & {
+						background-color: $dark_regular-text-color;
+						color: $dark_block-color;
+					}
+				} /*
+			
+				$media screen and (max-width: $tablet) {
+					margin-right:8px;
+				}*/
+			}
+		}
+	}
+}

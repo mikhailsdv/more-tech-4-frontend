@@ -3,17 +3,18 @@ import classnames from "classnames"
 
 import FormControl from "@mui/material/FormControl"
 import FormLabel from "@mui/material/FormLabel"
+import RadioGroup from "@mui/material/RadioGroup"
 import FormControlLabel from "@mui/material/FormControlLabel"
-import Checkbox from "@mui/material/Checkbox"
+import Radio from "@mui/material/Radio"
 import Typography from "../Typography"
 
 import styles from "./index.module.scss"
 
-export default function CheckboxGroup(props) {
+export default function _RadioGroup(props) {
 	const {
 		title,
 		options,
-		values,
+		value,
 		onChange,
 		id,
 		row,
@@ -32,24 +33,23 @@ export default function CheckboxGroup(props) {
 					<Typography variant={"subtitle1bold"}>{title}</Typography>
 				</FormLabel>
 			)}
-			{options.map(option => (
-				<FormControlLabel
-					key={option.value}
-					checked={values.includes(option.value)}
-					onChange={(_, value) => {
-						if (value) {
-							onChange(values.concat(option.value))
-						} else {
-							onChange(
-								values.filter(item => item !== option.value)
-							)
-						}
-					}}
-					control={<Checkbox />}
-					label={option.label}
-					className={classnames(row && styles.mr)}
-				/>
-			))}
+			<RadioGroup
+				aria-labelledby={id}
+				name={id}
+				value={value}
+				onChange={(_, value) => onChange(value)}
+				className={classnames(row && styles.row)}
+			>
+				{options.map(option => (
+					<FormControlLabel
+						key={option.value}
+						value={option.value}
+						control={<Radio />}
+						label={option.label}
+						className={classnames(row && styles.mr)}
+					/>
+				))}
+			</RadioGroup>
 		</FormControl>
 	)
 }

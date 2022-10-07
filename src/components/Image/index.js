@@ -5,7 +5,7 @@ import styles from "./index.module.scss"
 
 import {TbPhotoOff} from "react-icons/tb"
 
-const TableImage = props => {
+export default function Image(props) {
 	const {src, className, classes = {}, ...rest} = props
 
 	const [isLoaded, setLoaded] = useState(false)
@@ -53,5 +53,3 @@ const TableImage = props => {
 		/>
 	)
 }
-
-export default TableImage

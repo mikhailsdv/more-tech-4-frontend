@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 20px 25px;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 260px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+	@media screen and (max-width: $sm) {
+		max-width: unset;
+	}
+
+	.closeIcon {
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		color: $emphasis-outlined;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+	}
+
+	.title {
+		margin-bottom: 8px;
+	}
+
+	.indicator {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 5px;
+
+		&.success {
+			background-color: $positive-color;
+		}
+		&.error {
+			background-color: $error-color;
+		}
+		&.warning {
+			background-color: $warning-color;
+		}
+		&.default {
+			background-color: $accent-color;
+		}
+	}
+}

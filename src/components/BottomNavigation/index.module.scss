@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	backdrop-filter: blur(20px);
+	background-color: $light_main-color;
+	transition: $transition;
+	width: 100%;
+	//max-width: $max-width;
+	margin: 0 auto;
+	user-select: none;
+	z-index: 13;
+	border-radius: 18px 18px 0 0;
+	@media screen and (max-width: $max-width) {
+		border-radius: 0;
+	}
+	&[data-disable-blur="true"] {
+		backdrop-filter: none;
+	}
+
+	&[data-overscrolled="true"] {
+		box-shadow: none;
+		transform: translateY($bottom-navigation-height);
+	}
+	&[data-overscrolled="false"] {
+		box-shadow: 0 -1px 4px -1px rgba(0, 0, 0, 0.3);
+		transform: translateY(0px);
+	}
+
+	.actionRoot {
+		color: white;
+		padding-left: 2px;
+		padding-right: 2px;
+		min-width: unset;
+		width: 20%;
+
+		&[data-active="true"] {
+			opacity: 1;
+		}
+		&[data-active="false"] {
+			opacity: 0.6;
+		}
+
+		.actionLabel {
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}

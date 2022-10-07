@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 16px 44px 16px 16px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: $max-width;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 18px;
+	&[data-color="yellow"] {
+		background-color: #f5d020;
+		background-image: linear-gradient(315deg, #f5d020 0%, #f57e03 74%);
+		#{$dark-theme} & {
+			background-color: darken(#f5d020, 20%);
+			background-image: linear-gradient(
+				315deg,
+				darken(#f5d020, 20%) 0%,
+				darken(#f57e03, 20%) 74%
+			);
+		}
+	}
+	&[data-color="blue"] {
+		background-color: #7f53ac;
+		background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+		#{$dark-theme} & {
+			background-color: darken(#7f53ac, 20%);
+			background-image: linear-gradient(
+				315deg,
+				darken(#7f53ac, 20%) 0%,
+				darken(#647dee, 20%) 74%
+			);
+		}
+	}
+	&[data-color="purple"] {
+		background-color: #eb75c9;
+		background-image: linear-gradient(315deg, #eb75c9 0%, #6734dc 74%);
+		#{$dark-theme} & {
+			background-color: darken(#eb75c9, 20%);
+			background-image: linear-gradient(
+				315deg,
+				darken(#eb75c9, 20%) 0%,
+				darken(#6734dc, 20%) 74%
+			);
+		}
+	}
+
+	.message {
+		font-size: 16px;
+		color: $dark_regular-text-color;
+
+		.messageIcon {
+			color: inherit;
+			display: inline;
+			width: 1em;
+			height: 1em;
+			margin-right: 8px;
+			vertical-align: top;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+}

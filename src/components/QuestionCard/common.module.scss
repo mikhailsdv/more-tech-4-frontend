@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	#{$dark-theme} & {
+		background-color: $dark_block-color;
+	}
+
+	.title {
+		color: $light_main-color;
+		font-weight: 600;
+		#{$dark-theme} & {
+			color: $dark_regular-text-color;
+		}
+
+		.index {
+			background-color: $light_main-color;
+			color: $light_block-color;
+			padding: 1px 6px;
+			margin-right: 6px;
+			margin-bottom: 1px;
+			border-radius: 99px;
+			font-size: 0.8em;
+			font-weight: 600;
+			display: inline-block;
+			vertical-align: text-bottom;
+			#{$dark-theme} & {
+				background-color: $dark_regular-text-color;
+				color: $dark_block-color;
+			}
+		}
+	}
+	.content {
+		padding-top: 0;
+		padding-bottom: 16px;
+
+		.variant {
+			position: relative;
+			width: 100%;
+			min-height: calc(1em + 24px);
+			line-height: 1.2em;
+			font-size: 1em;
+			padding: 12px;
+			border-radius: 10px;
+			margin-bottom: 8px;
+			font-weight: 400;
+			cursor: pointer;
+			display: inline-block;
+			transition: $transition;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.note {
+			color: $light_placeholder-color;
+			margin-top: 6px;
+			#{$dark-theme} & {
+				color: $dark_placeholder-color;
+			}
+		}
+	}
+
+	.actions {
+		padding-top: 0;
+		justify-content: flex-end;
+
+		.button {
+			&[disabled] {
+				opacity: 0.4;
+			}
+		}
+
+		.reportButton {
+			margin-right: auto;
+		}
+
+		.icon {
+			color: $light_placeholder-color;
+			#{$dark-theme} & {
+				color: $dark_placeholder-color;
+			}
+		}
+	}
+}
