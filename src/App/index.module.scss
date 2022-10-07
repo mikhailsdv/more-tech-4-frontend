@@ -1,0 +1,19 @@
+@import "../styles/variables.scss";
+
+.root {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	//overflow: hidden;
+	padding-left: $drawer-minimized-width;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	@media screen and (max-width: $sm) {
+		padding-left: 0;
+	}
+
+	&.px0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
