@@ -1,0 +1,18 @@
+[
+	{
+		"name": "login",
+		"url": "/login",
+		"method": "post",
+		"params": ["login", "password"]
+	},
+
+	{
+		"name": "uploadSubject",
+		"url": "/subject.upload",
+		"method": "post",
+		"params": ["subject_name", "course", "language", "file"],
+		"headers": {
+			"Content-Type": "multipart/form-data"
+		}
+	}
+]
