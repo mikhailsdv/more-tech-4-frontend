@@ -36,7 +36,7 @@ const Content = props => {
 							/>
 							<div className={styles.user}>
 								<Typography variant={"subtitle1bold"}>
-									{value.user.name}
+									{value.user.first_and_last_name}
 								</Typography>
 								<Typography variant={"body2"}>
 									{value.user.email}
