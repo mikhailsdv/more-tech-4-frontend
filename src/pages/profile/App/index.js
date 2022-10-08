@@ -100,25 +100,24 @@ export default function Profile(props) {
 				//setUser(data)
 			}*/
 		})()
-
-		if (idParam) {
-			;(async () => {
-				setUserData(null)
-				const {error, user, balance} = await who({user_id: idParam})
-				if (error) {
-					enqueueSnackbar({
-						message: error,
-						variant: "error",
-					})
-				} else {
-					setUserData({
-						...user,
-						coins: balance.coinsAmount,
-						matic: balance.maticAmount,
-					})
-				}
-			})()
-		}
+		;(async () => {
+			idParam && setUserData(null)
+			const {error, user, balance} = idParam
+				? await who({user_id: idParam})
+				: await whoami()
+			if (error) {
+				enqueueSnackbar({
+					message: error,
+					variant: "error",
+				})
+			} else {
+				setUserData({
+					...user,
+					coins: balance.coinsAmount,
+					matic: balance.maticAmount,
+				})
+			}
+		})()
 	}, [listCoworkers, enqueueSnackbar, idParam, userId])
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)

@@ -10,7 +10,7 @@ import React, {
 import UserContext from "../../../../contexts/user"
 import useApi from "../../../../api/useApi"
 import {getFirstAndLastName} from "../../../../js/utils"
-//import {useSnackbar} from "notistack"
+import {useSnackbar} from "notistack"
 
 //import format from "date-fns/format"
 //import parse from "date-fns/parse"
@@ -38,7 +38,8 @@ import CheckboxLabel from "../../../../components/CheckboxLabel"
 
 export default function Profile(props) {
 	const {user} = useContext(UserContext)
-	const {searchUser} = useApi()
+	const {transferRubles} = useApi()
+	const {enqueueSnackbar} = useSnackbar()
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
 	const [tab, setTab] = useState("send")
@@ -49,7 +50,26 @@ export default function Profile(props) {
 	const [via, setVia] = useState("email")
 	const [saveCard, setSaveCard] = useState(false)
 
-	const send = useCallback(() => {}, [privateKey, foundUser, sum])
+	const send = useCallback(async () => {
+		const {status} = await transferRubles({
+			private_key_from: privateKey,
+			user_id_to: foundUser.id,
+			amount: Number(sum),
+		})
+		if (status === "ok") {
+			enqueueSnackbar({
+				title: "Готово!",
+				message: "Монеты переведены.",
+				variant: "success",
+			})
+		} else {
+			enqueueSnackbar({
+				message:
+					"Не удалось перевести монеты. Проверьте правильность введенных данных.",
+				variant: "error",
+			})
+		}
+	}, [privateKey, foundUser, sum, enqueueSnackbar])
 
 	//const [file, setFile] = useState("")
 
@@ -197,7 +217,11 @@ export default function Profile(props) {
 						/>
 					)}
 
-					<Button variant={"primary"} className={"mt-4"}>
+					<Button
+						variant={"primary"}
+						className={"mt-4"}
+						onClick={send}
+					>
 						{tab === "send" ? "Отправить" : "Обменять и вывести"}
 					</Button>
 				</Card>

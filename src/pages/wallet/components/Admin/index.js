@@ -32,9 +32,13 @@ import RadioGroup from "../../../../components/RadioGroup"
 //import CheckboxGroup from "../../../../components/CheckboxGroup"
 import CheckboxLabel from "../../../../components/CheckboxLabel"
 import SearchUser from "../../../../components/SearchUser"
+import {useSnackbar} from "notistack"
+import useApi from "../../../../api/useApi"
 
 export default function Profile(props) {
 	const {user} = useContext(UserContext)
+	const {transferRubles} = useApi()
+	const {enqueueSnackbar} = useSnackbar()
 	//const {getUserScoresGraph, changePassword, setToken, resetToken} = useApi()
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
@@ -45,6 +49,27 @@ export default function Profile(props) {
 	const [teamName, setTeamName] = useState("")
 	const [via, setVia] = useState("email")
 	const [teamStaff, setTeamStaff] = useState([])
+
+	const send = useCallback(async () => {
+		const {status} = await transferRubles({
+			private_key_from: privateKey,
+			user_id_to: foundUser.id,
+			amount: Number(sum),
+		})
+		if (status === "ok") {
+			enqueueSnackbar({
+				title: "Готово!",
+				message: "Монеты переведены.",
+				variant: "success",
+			})
+		} else {
+			enqueueSnackbar({
+				message:
+					"Не удалось перевести монеты. Проверьте правильность введенных данных.",
+				variant: "error",
+			})
+		}
+	}, [privateKey, foundUser, sum, enqueueSnackbar])
 
 	/*const {
 		open: openChangePasswordDialog,
@@ -195,7 +220,7 @@ export default function Profile(props) {
 				</>
 			)}
 
-			<Button variant={"primary"} className={"mt-4"}>
+			<Button variant={"primary"} className={"mt-4"} onClick={send}>
 				Начислить монеты
 			</Button>
 		</Card>

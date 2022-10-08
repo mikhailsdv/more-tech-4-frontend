@@ -41,13 +41,11 @@
 		"params": ["email", "name"]
 	},
 	{
-		"name": "transerRubles",
-		"url": "/transer_rubles",
+		"name": "transferRubles",
+		"url": "/transfer_rubles",
 		"method": "post",
-		"params": ["private_key_from", "user_id_to", "user_id_to"]
+		"params": ["private_key_from", "user_id_to", "amount"]
 	},
-
-	,
 	{
 		"name": "uploadPhoto",
 		"url": "/upload_photo",

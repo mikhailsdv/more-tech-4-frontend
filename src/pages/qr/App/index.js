@@ -40,9 +40,12 @@ const App = () => {
 	const onScan = useCallback(
 		data => {
 			if (!data?.text || qrData) return
-			setQrData(data.text.split(";"))
-			const [image, price, name] = data.text.split(";")
-			setQrData({image, name, price})
+			try {
+				const [image, price, name] = data.text.split(";")
+				if (image && price && name) {
+					setQrData({image, name, price})
+				}
+			} catch (e) {}
 		},
 		[qrData]
 	)
@@ -106,12 +109,21 @@ const App = () => {
 				<img src={areaImage} alt={"area"} className={styles.area} />
 				<QrReader
 					delay={1000}
-					constraints={{video: true, facingMode: "environment"}}
+					constraints={{video: {facingMode: "environment"}}}
 					//style={previewStyle}
 					onError={console.error}
 					onScan={onScan}
 				/>
 			</div>
+			<Typography
+				variant={"subtitle1"}
+				component={"div"}
+				emphasis={"medium"}
+				className={"mt-4"}
+				align={"center"}
+			>
+				Сканируйте QR с телефона
+			</Typography>
 		</Container>
 	)
 }
