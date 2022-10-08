@@ -94,7 +94,7 @@ export default function Profile(props) {
 
 	return (
 		<UserContext.Consumer>
-			{({user}) => roleComponents[user.role]}
+			{({user}) => roleComponents[user.rights]}
 		</UserContext.Consumer>
 	)
 }

@@ -37,7 +37,7 @@ export default function Profile(props) {
 	//const {getUserScoresGraph, changePassword, setToken, resetToken} = useApi()
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
-	const [tab, setTab] = useState("all")
+	const [tab, setTab] = useState("user")
 	const [email, setEmail] = useState("")
 	const [sum, setSum] = useState("")
 	const [userName, setUserName] = useState("")
@@ -68,11 +68,11 @@ export default function Profile(props) {
 				value={tab}
 				onChange={(_, value) => setTab(value)}
 			>
-				<Tab label={"Начислить всем"} value={"all"} />
+				{/*<Tab label={"Начислить всем"} value={"all"} />*/}
 				<Tab label={"Начислить человеку"} value={"user"} />
 				<Tab label={"Начислить отделу"} value={"team"} />
 			</Tabs>
-			{tab === "all" && (
+			{/*{tab === "all" && (
 				<Grid container spacing={3}>
 					<Grid item xs={12} sm={12} md={6} lg={6}>
 						<TextField
@@ -83,7 +83,7 @@ export default function Profile(props) {
 						/>
 					</Grid>
 				</Grid>
-			)}
+			)}*/}
 
 			{tab === "user" && (
 				<>
@@ -91,7 +91,7 @@ export default function Profile(props) {
 						className={"mb-4"}
 						id={"via"}
 						value={via}
-						onChange={(_, value) => setVia(value)}
+						onChange={setVia}
 						options={[
 							{value: "email", label: "Перевод по email"},
 							{value: "name", label: "Перевод по ФИО"},
