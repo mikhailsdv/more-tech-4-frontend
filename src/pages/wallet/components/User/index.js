@@ -9,6 +9,7 @@ import React, {
 //import {pluralize, numberWithSpaces} from "../../../js/utils"
 import UserContext from "../../../../contexts/user"
 import useApi from "../../../../api/useApi"
+import {getFirstAndLastName} from "../../../../js/utils"
 //import {useSnackbar} from "notistack"
 
 //import format from "date-fns/format"
@@ -17,6 +18,7 @@ import useApi from "../../../../api/useApi"
 //import sub from "date-fns/sub"
 //import {ru} from "date-fns/locale"
 
+import SearchUser from "../../../../components/SearchUser"
 import Tab from "../../../../components/Tab"
 import Tabs from "../../../../components/Tabs"
 import Autocomplete from "../../../../components/Autocomplete"
@@ -40,23 +42,15 @@ export default function Profile(props) {
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
 	const [tab, setTab] = useState("send")
-	const [email, setEmail] = useState("")
 	const [sum, setSum] = useState("")
-	const [userName, setUserName] = useState("")
-	const [foundUser, setFoundUser] = useState(null)
+	const [privateKey, setPrivateKey] = useState("")
+	const [foundUser, setFoundUser] = useState({})
 	const [cardNumber, setCardNumber] = useState("")
 	const [via, setVia] = useState("email")
 	const [saveCard, setSaveCard] = useState(false)
 
-	const [foundUsers, setFoundUsers] = useState([])
+	const send = useCallback(() => {}, [privateKey, foundUser, sum])
 
-	const onChangeUserName = useCallback(
-		async value => {
-			const r = await searchUser({name: value})
-			console.log(r)
-		},
-		[searchUser]
-	)
 	//const [file, setFile] = useState("")
 
 	/*const {
@@ -117,34 +111,6 @@ export default function Profile(props) {
 							value={"exchange"}
 						/>
 					</Tabs>
-					<Autocomplete
-						options={[
-							{a: 1, b: 2},
-							{a: 2, b: 2},
-							{a: 3, b: 2},
-						]}
-						getOptionLabel={option => String(option.a)}
-						filterOptions={x => x}
-						autoComplete
-						label={"Text"}
-						//includeInputInList
-						//filterSelectedOptions
-						value={foundUser}
-						inputValue={userName}
-						onInputChange={value => {
-							onChangeUserName(value)
-							setUserName(value)
-						}}
-						isOptionEqualToValue={(option, value) =>
-							option.a === Number(value)
-						}
-						onChange={setFoundUser}
-						renderOption={option => (
-							<div key={option.a}>
-								{option.a} {option.b}
-							</div>
-						)}
-					/>
 					{tab === "send" && (
 						<RadioGroup
 							className={"mb-4"}
@@ -162,20 +128,18 @@ export default function Profile(props) {
 						<Grid container spacing={3}>
 							<Grid item xs={12} sm={6} md={12} lg={4}>
 								{via === "email" ? (
-									<TextField
-										value={email}
-										onChange={e => setEmail(e.target.value)}
-										//icon={FiSearch}
+									<SearchUser
+										key={"email"}
+										onChange={setFoundUser}
 										label={"Email получателя"}
+										by={"email"}
 									/>
 								) : (
-									<TextField
-										value={userName}
-										onChange={e =>
-											setUserName(e.target.value)
-										}
-										//icon={FiSearch}
+									<SearchUser
+										key={"name"}
+										onChange={setFoundUser}
 										label={"ФИО получателя"}
+										by={"name"}
 									/>
 								)}
 							</Grid>
@@ -188,12 +152,17 @@ export default function Profile(props) {
 								/>
 							</Grid>
 							<Grid item xs={12} sm={6} md={6} lg={4}>
-								<Staff
-									name={"Ilya"}
-									position={"Position"}
-									image={"https://picsum.photos/40/40"}
-									card
+								<TextField
+									value={privateKey}
+									onChange={e =>
+										setPrivateKey(e.target.value)
+									}
+									//icon={FiSearch}
+									label={"Ваш private-key"}
 								/>
+							</Grid>
+							<Grid item xs={12} sm={6} md={6} lg={4}>
+								<Staff {...foundUser} card />
 							</Grid>
 						</Grid>
 					) : (

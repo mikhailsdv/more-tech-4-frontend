@@ -41,6 +41,14 @@
 		"params": ["email", "name"]
 	},
 	{
+		"name": "transerRubles",
+		"url": "/transer_rubles",
+		"method": "post",
+		"params": ["private_key_from", "user_id_to", "user_id_to"]
+	},
+
+	,
+	{
 		"name": "uploadPhoto",
 		"url": "/upload_photo",
 		"method": "post",

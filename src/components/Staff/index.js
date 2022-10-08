@@ -13,6 +13,7 @@ import styles from "./index.module.scss"
 const Staff = props => {
 	const {
 		id,
+		link = true,
 		first_name, //str|Имя сотрудника.
 		last_name,
 		photo_id, //str|Ссылка на фото.
@@ -26,43 +27,43 @@ const Staff = props => {
 		? getFirstAndLastName({first_name, last_name})
 		: null
 
-	return (
-		<Link to={`/profile?id=${id}`} internal block>
-			<div
-				className={classnames(
-					styles.root,
-					className,
-					card && styles.card
+	const content = (
+		<div
+			className={classnames(styles.root, className, card && styles.card)}
+			{...rest}
+		>
+			<Avatar className={styles.avatar} src={getImage(photo_id)} />
+			<div className={styles.info}>
+				{name ? (
+					<Typography variant={"subtitle2bold"}>{name}</Typography>
+				) : (
+					<Skeleton
+						animation={false}
+						width="60%"
+						height={20}
+						className={classnames("mb-1", styles.skeleton)}
+					/>
 				)}
-				{...rest}
-			>
-				<Avatar className={styles.avatar} src={getImage(photo_id)} />
-				<div className={styles.info}>
-					{name ? (
-						<Typography variant={"subtitle2bold"}>
-							{name}
-						</Typography>
-					) : (
-						<Skeleton
-							animation={false}
-							width="60%"
-							height={20}
-							className={classnames("mb-1", styles.skeleton)}
-						/>
-					)}
-					{job ? (
-						<Typography variant={"caption"}>{job}</Typography>
-					) : (
-						<Skeleton
-							animation={false}
-							width="80%"
-							height={20}
-							className={styles.skeleton}
-						/>
-					)}
-				</div>
+				{job ? (
+					<Typography variant={"caption"}>{job}</Typography>
+				) : (
+					<Skeleton
+						animation={false}
+						width="80%"
+						height={20}
+						className={styles.skeleton}
+					/>
+				)}
 			</div>
+		</div>
+	)
+
+	return link ? (
+		<Link to={`/profile?id=${id}`} internal block>
+			{content}
 		</Link>
+	) : (
+		content
 	)
 }
 

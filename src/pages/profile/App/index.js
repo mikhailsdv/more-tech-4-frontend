@@ -87,6 +87,19 @@ export default function Profile(props) {
 				//setUser(data)
 			}
 		})()
+		;(async () => {
+			const a = await listAchievements({user_id: userId})
+			console.log(a)
+			/*if (error) {
+				enqueueSnackbar({
+					message: error,
+					variant: "error",
+				})
+			} else {
+				setAchivements(users.filter(item => item.id !== userId))
+				//setUser(data)
+			}*/
+		})()
 
 		if (idParam) {
 			;(async () => {

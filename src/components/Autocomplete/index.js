@@ -25,19 +25,20 @@ const _Autocomplete = props => {
 			getOptionLabel={getOptionLabel}
 			filterOptions={x => x}
 			options={options}
+			clearOnBlur={false}
 			autoComplete
 			//includeInputInList
 			//filterSelectedOptions
 			value={value}
 			inputValue={inputValue}
 			onChange={(_, value) => onChange(value)}
-			onInputChange={(_, value) => {
-				onInputChange(value)
+			onInputChange={(e, value, reason) => {
+				reason !== "reset" && onInputChange(value)
 			}}
 			renderInput={params => (
 				<TextField {...params} label={label} fullWidth />
 			)}
-			renderOption={(props, option) => renderOption(option)}
+			renderOption={renderOption}
 			{...rest}
 		/>
 	)

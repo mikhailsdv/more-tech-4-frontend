@@ -31,6 +31,7 @@ import Staff from "../../../../components/Staff"
 import RadioGroup from "../../../../components/RadioGroup"
 //import CheckboxGroup from "../../../../components/CheckboxGroup"
 import CheckboxLabel from "../../../../components/CheckboxLabel"
+import SearchUser from "../../../../components/SearchUser"
 
 export default function Profile(props) {
 	const {user} = useContext(UserContext)
@@ -38,9 +39,9 @@ export default function Profile(props) {
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
 	const [tab, setTab] = useState("user")
-	const [email, setEmail] = useState("")
 	const [sum, setSum] = useState("")
-	const [userName, setUserName] = useState("")
+	const [privateKey, setPrivateKey] = useState("")
+	const [foundUser, setFoundUser] = useState({})
 	const [teamName, setTeamName] = useState("")
 	const [via, setVia] = useState("email")
 	const [teamStaff, setTeamStaff] = useState([])
@@ -102,20 +103,28 @@ export default function Profile(props) {
 					<Grid container spacing={3}>
 						<Grid item xs={12} sm={6} md={12} lg={4}>
 							{via === "email" ? (
-								<TextField
-									value={email}
-									onChange={e => setEmail(e.target.value)}
-									//icon={FiSearch}
+								<SearchUser
+									key={"email"}
+									onChange={setFoundUser}
 									label={"Email получателя"}
+									by={"email"}
 								/>
 							) : (
-								<TextField
-									value={userName}
-									onChange={e => setUserName(e.target.value)}
-									//icon={FiSearch}
+								<SearchUser
+									key={"name"}
+									onChange={setFoundUser}
 									label={"ФИО получателя"}
+									by={"name"}
 								/>
 							)}
+						</Grid>
+						<Grid item xs={12} sm={6} md={6} lg={4}>
+							<TextField
+								value={privateKey}
+								onChange={e => setPrivateKey(e.target.value)}
+								//icon={FiSearch}
+								label={"Ваш private-key"}
+							/>
 						</Grid>
 						<Grid item xs={12} sm={6} md={6} lg={4}>
 							<TextField
@@ -126,12 +135,7 @@ export default function Profile(props) {
 							/>
 						</Grid>
 						<Grid item xs={12} sm={6} md={6} lg={4}>
-							<Staff
-								name={"Ilya"}
-								position={"Position"}
-								image={"https://picsum.photos/40/40"}
-								card
-							/>
+							<Staff {...foundUser} card />
 						</Grid>
 					</Grid>
 				</>
