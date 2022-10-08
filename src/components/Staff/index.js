@@ -7,8 +7,16 @@ import Avatar from "@mui/material/Avatar"
 
 import styles from "./index.module.scss"
 
+//Компонент карточки сотрудника.
 const Staff = props => {
-	const {name, image, position, card, className, ...rest} = props
+	const {
+		name, //str|Имя сотрудника.
+		image, //str|Ссылка на фото.
+		position, //str|Должность в компании.
+		card, //bool|Передайте `true`, если нужно показать компонент в виде карточки.
+		className, //str|Доплнительный className для корневого элемента.
+		...rest //obj|Все остальные пропсы будут перенаправлены корневому элементу.
+	} = props
 
 	return (
 		<div

@@ -5,13 +5,10 @@
 	width: 100%;
 	display: inline-block;
 	overflow: hidden;
-	border: 4px dotted $light_dark-faded-color;
+	border: 4px dotted $emphasis-high;
 	border-radius: 10px;
 	min-height: 120px;
 	padding: 8px;
-	#{$dark-theme} & {
-		border: 6px dotted $dark_light-faded-color;
-	}
 
 	.input {
 		position: absolute;
@@ -33,15 +30,12 @@
 		left: 0;
 		z-index: 8;
 		font-size: 16px;
-		color: $light_placeholder-color;
+		border: 4px dotted $emphasis-high;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 		opacity: 0;
-		#{$dark-theme} & {
-			color: $dark_placeholder-color;
-		}
 
 		&[data-active="true"] {
 			opacity: 1;
@@ -61,17 +55,13 @@
 			position: relative;
 			width: 100%;
 			margin-bottom: 4px;
-			background-color: $light_main-color;
+			//background-color: $light_main-color;
 			padding: 10px 12px;
 			border-radius: 8px;
-			color: $light_block-color;
+			//color: $light_block-color;
 			overflow: hidden;
 			display: flex;
 			align-items: center;
-			#{$dark-theme} & {
-				background-color: $dark_regular-text-color;
-				color: $dark_block-color;
-			}
 
 			.fileIcon {
 				position: relative;
@@ -79,13 +69,9 @@
 				vertical-align: top;
 				//height: 0.8em;
 				//width: 0.8em;
-				color: $light_block-color;
+				//color: $light_block-color;
 				margin-right: 6px;
 				align-self: baseline;
-				#{$dark-theme} & {
-					background-color: $dark_regular-text-color;
-					color: $dark_block-color;
-				}
 			}
 		}
 	}

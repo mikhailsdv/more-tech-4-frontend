@@ -1,6 +1,6 @@
 import React from "react"
 
-import preloaderLogoSrc from "../../images/logo/preloader-logo.svg"
+import preloaderLogoSrc from "../../images/logo/logo.svg"
 
 import styles from "./index.module.scss"
 

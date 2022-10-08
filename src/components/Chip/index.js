@@ -7,8 +7,15 @@ import CancelRoundedIcon from "@mui/icons-material/CancelRounded"
 
 import styles from "./index.module.scss"
 
+//Компонент чипа.
 const Chip = props => {
-	const {children, isSelected, onDelete, className, ...rest} = props
+	const {
+		children, //str|Текст чипа.
+		isSelected, //bool|Передайте , чтобы выделить чип синим цветом.
+		onDelete, //func|Функция, которая будет вызвана при удалении этой крошки.
+		className, //str|Доплнительный className для корневого элемента.
+		...rest //obj|Все остальные пропсы будут перенаправлены корневому элементу.
+	} = props
 
 	return (
 		<div

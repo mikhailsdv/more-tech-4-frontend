@@ -42,10 +42,10 @@
 	},
 
 	{
-		"name": "uploadSubject",
-		"url": "/subject.upload",
+		"name": "uploadPhoto",
+		"url": "/upload_photo",
 		"method": "post",
-		"params": ["subject_name", "course", "language", "file"],
+		"params": ["file"],
 		"headers": {
 			"Content-Type": "multipart/form-data"
 		}

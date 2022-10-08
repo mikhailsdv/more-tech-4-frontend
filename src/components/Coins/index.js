@@ -7,14 +7,15 @@ import Typography from "../Typography"
 
 import styles from "./index.module.scss"
 
+//Компонент монеток.
 export default function Coins(props) {
 	const {
-		amount,
-		inline,
-		emphasis = "medium",
-		className,
-		classes = {},
-		...rest
+		amount, //number|Количество монет
+		inline, //bool|Передайте `true`, если компонент является инлайновым.
+		emphasis = "medium", //str|Вариант начертания текста.|`"medium"`
+		className, //str|Доплнительный className для корневого элемента.
+		classes = {}, //obj|Дополнительные классы к дочерним элементам.
+		...rest //obj|Все остальные пропсы будут перенаправлены корневому элементу.
 	} = props
 	const Root = inline ? "span" : "div"
 

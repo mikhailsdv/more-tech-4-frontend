@@ -8,7 +8,7 @@ import React, {
 //import {useNavigate} from "react-router-dom"
 //import {pluralize, numberWithSpaces} from "../../../js/utils"
 import UserContext from "../../../../contexts/user"
-//import useApi from "../../../../api/useApi"
+import useApi from "../../../../api/useApi"
 //import {useSnackbar} from "notistack"
 
 //import format from "date-fns/format"
@@ -22,6 +22,7 @@ import Tabs from "../../../../components/Tabs"
 import Grid from "@mui/material/Grid"
 import Divider from "@mui/material/Divider"
 import Card from "../../../../components/Card"
+import FileUploadField from "../../../../components/FileUploadField"
 import Button from "../../../../components/Button"
 import Coins from "../../../../components/Coins"
 import Image from "../../../../components/Image"
@@ -34,7 +35,7 @@ import CheckboxLabel from "../../../../components/CheckboxLabel"
 
 export default function Profile(props) {
 	const {user} = useContext(UserContext)
-	//const {getUserScoresGraph, changePassword, setToken, resetToken} = useApi()
+	const {uploadPhoto} = useApi()
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
 	const [tab, setTab] = useState("send")
@@ -44,6 +45,7 @@ export default function Profile(props) {
 	const [cardNumber, setCardNumber] = useState("")
 	const [via, setVia] = useState("email")
 	const [saveCard, setSaveCard] = useState(false)
+	const [file, setFile] = useState("")
 
 	/*const {
 		open: openChangePasswordDialog,
@@ -52,15 +54,19 @@ export default function Profile(props) {
 		Component: ChangePasswordDialog,
 	} = useDialog()*/
 
-	/*const onLogout = useCallback(() => {
-		resetToken()
-		setIsAuthorized(false)
-		navigate("/about")
-	}, [resetToken, navigate, setIsAuthorized])*/
+	const upload = useCallback(async () => {
+		console.log(file)
+		await uploadPhoto({file: file})
+	}, [uploadPhoto, file])
 
 	return (
 		<Grid container spacing={3}>
 			<Grid item xs={12} sm={12} md={5} lg={3}>
+				<FileUploadField
+					onChange={setFile}
+					name={"name"}
+					value={file}
+				/>
 				<UserContext.Consumer>
 					{({user}) => (
 						<Card>
@@ -182,7 +188,11 @@ export default function Profile(props) {
 						/>
 					)}
 
-					<Button variant={"primary"} className={"mt-4"}>
+					<Button
+						variant={"primary"}
+						className={"mt-4"}
+						onClick={upload}
+					>
 						{tab === "send" ? "Отправить" : "Обменять и вывести"}
 					</Button>
 				</Card>
