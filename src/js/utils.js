@@ -44,6 +44,8 @@ const hasBlurSupport =
 	typeof document.body.style.webkitBackdropFilter === "string" ||
 	typeof document.body.style.backdropFilter === "string"
 
+const getFirstAndLastName = user => `${user.first_name} ${user.last_name}`
+
 module.exports = {
 	pluralize,
 	arrayRandom,
@@ -51,4 +53,5 @@ module.exports = {
 	sleep,
 	numberWithSpaces,
 	hasBlurSupport,
+	getFirstAndLastName,
 }

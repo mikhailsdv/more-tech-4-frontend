@@ -24,13 +24,18 @@ const Staff = props => {
 						animation={false}
 						width="60%"
 						height={20}
-						className={"mb-1"}
+						className={classnames("mb-1", styles.skeleton)}
 					/>
 				)}
 				{position ? (
 					<Typography variant={"caption"}>{position}</Typography>
 				) : (
-					<Skeleton animation={false} width="80%" height={20} />
+					<Skeleton
+						animation={false}
+						width="80%"
+						height={20}
+						className={styles.skeleton}
+					/>
 				)}
 			</div>
 		</div>

@@ -42,17 +42,6 @@ import StarIcon from "@mui/icons-material/Star"
 
 import styles from "./index.module.scss"
 
-const staff = [...Array(6)].map((_, index) => (
-	<div key={index}>
-		<Staff
-			name={"Илья Николаев"}
-			position={"Product Design Lead"}
-			image={"https://picsum.photos/40/40" + "?random=" + (index + 1)}
-		/>
-		<Divider />
-	</div>
-))
-
 const Info = props => {
 	const {icon: Icon, className, children, ...rest} = props
 
@@ -66,26 +55,33 @@ const Info = props => {
 
 export default function Profile(props) {
 	const {user} = useContext(UserContext)
-	const {whoami} = useApi()
+	const {whoami, listCoworkers} = useApi()
 	const {enqueueSnackbar} = useSnackbar()
 
 	const [isLoadingProfile, setIsLoadingProfile] = useState(true)
+	const [coworkers, setCoworkers] = useState(
+		[...Array(6)].map((_, index) => ({
+			index,
+		}))
+	)
+	const [manager, setManager] = useState(null)
 
-	/*useEffect(() => {
+	useEffect(() => {
 		;(async () => {
-			setIsLoadingProfile(true)
-			const {error, user} = await whoami()
+			//setIsLoadingProfile(true)
+			const {error, users} = await listCoworkers()
 			if (error) {
 				enqueueSnackbar({
 					message: error,
 					variant: "error",
 				})
 			} else {
+				setCoworkers(users.filter(item => item.id !== user.id))
 				//setUser(data)
 			}
-			setIsLoadingProfile(false)
+			//setIsLoadingProfile(false)
 		})()
-	}, [whoami, enqueueSnackbar])*/
+	}, [listCoworkers, enqueueSnackbar, user.id])
 
 	//const [isChangingPassword, setIsChangingPassword] = useState(false)
 	const [searchValue, setSearchValue] = useState("")
@@ -114,7 +110,7 @@ export default function Profile(props) {
 								className={classnames(styles.userpic, "mb-5")}
 							/>
 							<Typography variant={"h5"} gutterBottom>
-								{user.name}
+								{user.first_and_last_name}
 							</Typography>
 							<Typography
 								variant={"body2"}
@@ -252,11 +248,7 @@ export default function Profile(props) {
 							</Typography>
 
 							<Divider />
-							<Staff
-								name={"Илья Николаев"}
-								position={"Product Design Lead"}
-								image={"https://picsum.photos/40/40"}
-							/>
+							<Staff {...manager} />
 							<Divider />
 						</Card>
 						<Card>
@@ -272,7 +264,12 @@ export default function Profile(props) {
 							</Typography>
 
 							<Divider />
-							{staff}
+							{coworkers.map(item => (
+								<div key={item.id}>
+									<Staff {...item} />
+									<Divider />
+								</div>
+							))}
 						</Card>
 					</Grid>
 				</Grid>

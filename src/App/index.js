@@ -15,10 +15,11 @@ import {
 	useLocation,
 } from "react-router-dom"
 import Helmet from "react-helmet"
-//import useApi from "api/useApi"
-//import {useSnackbar} from "notistack"
+import useApi from "../api/useApi"
+import {useSnackbar} from "notistack"
 //import useEffectOnce from "hooks/useEffectOnce"
 //import {setUserParams} from "js/ym"
+import {getFirstAndLastName} from "../js/utils"
 import UserContext from "../contexts/user"
 import AuthorizationContext from "../contexts/authorization"
 
@@ -39,15 +40,11 @@ import Drawer from "../components/Drawer"
 //import PersonRoundedIcon from "@mui/icons-material/PersonRounded"
 //import SearchRoundedIcon from "@mui/icons-material/SearchRounded"
 
-import ComponentsPage from "../pages/components/App"
-import ProfilePage from "../pages/profile/App"
-import WalletPage from "../pages/wallet/App"
-import LoginPage from "../pages/login/App"
-//import PreparePage from "pages/prepare/App"
-//import UploadPage from "pages/upload/App"
-//import SearchPage from "pages/search/App"
-//import BookmarksPage from "pages/bookmarks/App"
-//import TopPage from "pages/top/App"
+//import ComponentsPage from "../pages/components/App"
+//import ProfilePage from "../pages/profile/App"
+//import WalletPage from "../pages/wallet/App"
+//import LoginPage from "../pages/login/App"
+//import ShopPage from "../pages/shop/App"
 
 import {TbComponents} from "react-icons/tb"
 import {FaDollarSign} from "react-icons/fa"
@@ -68,92 +65,10 @@ const drawerItems = [
 		url: "/shop",
 		icon: MdShoppingBasket,
 	},
-	{
-		title: "Awards",
-		url: "/awards",
-		icon: BsFillAwardFill,
-	},
 ]
 
 const allPages = [
-	/*{
-		name: "Сессия",
-		url: "/session",
-		component: SessionPage,
-		private: true,
-	},
-	{
-		name: "Подготовка",
-		url: "/prepare",
-		component: PreparePage,
-		private: true,
-	},
-	{
-		name: "Загрузить",
-		url: "/upload",
-		component: UploadPage,
-		private: true,
-	},
-	{
-		name: "Профиль",
-		url: "/cabinet",
-		component: CabinetPage,
-		private: true,
-	},
-	{
-		name: "Поиск",
-		url: "/search",
-		component: SearchPage,
-		private: true,
-	},
-	{
-		name: "Закладки",
-		url: "/bookmarks",
-		component: BookmarksPage,
-		private: true,
-	},
-	{
-		name: "Заявки",
-		url: "/requests",
-		component: RequestsPage,
-		private: true,
-	},
-	{
-		name: "Рейтинг лучших",
-		url: "/top",
-		component: TopPage,
-		private: true,
-	},
-	{
-		name: "Восстановить пароль",
-		url: "/restore",
-		component: lazy(() => import("../pages/restore/App")),
-		private: false,
-	},
-	{
-		name: "Testnik.kz",
-		url: "/about",
-		component: lazy(() => import("../pages/about/App")),
-		private: false,
-	},
-	{
-		name: "Условия соглашения",
-		url: "/terms",
-		component: lazy(() => import("../pages/terms/App")),
-		private: false,
-	},
-	{
-		name: "FAQ",
-		url: "/faq",
-		component: lazy(() => import("../pages/faq/App")),
-		private: false,
-	},
-	{
-		name: "Testnik.kz",
-		url: "/signin",
-		component: lazy(() => import("../pages/signin/App")),
-		private: false,
-	},
+	/*
 	{
 		name: "Testnik.kz",
 		url: "/signup",
@@ -163,39 +78,37 @@ const allPages = [
 	{
 		name: "Профиль",
 		url: "/profile",
-		component: ProfilePage,
+		component: lazy(() => import("../pages/profile/App")),
+		//component: ProfilePage,
 		private: true,
 	},
 	{
 		name: "Components",
 		url: "/components",
-		//component: lazy(() => import("../pages/components/App")),
-		component: ComponentsPage,
+		component: lazy(() => import("../pages/components/App")),
+		//component: ComponentsPage,
 		private: false,
 	},
 	{
 		name: "Мой кошелек",
 		url: "/wallet",
-		component: WalletPage,
+		component: lazy(() => import("../pages/wallet/App")),
+		//component: WalletPage,
 		private: true,
 	},
 	{
 		name: "Shop",
 		url: "/shop",
-		component: ComponentsPage,
-		private: true,
-	},
-	{
-		name: "Awards",
-		url: "/awards",
-		component: ComponentsPage,
+		component: lazy(() => import("../pages/shop/App")),
+		//component: ShopPage,
 		private: true,
 	},
 
 	{
 		name: "Вход",
 		url: "/login",
-		component: LoginPage,
+		component: lazy(() => import("../pages/login/App")),
+		//component: LoginPage,
 		private: false,
 	},
 ]
@@ -243,9 +156,9 @@ const Root = ({className, ...rest}) => (
 
 const App = () => {
 	const location = useLocation()
-	/*const navigate = useNavigate()
+	const {token, whoami} = useApi()
 	const {enqueueSnackbar} = useSnackbar()
-	const {token, getUserInfo} = useApi()
+	/*const navigate = useNavigate()
 	const params = useURLParams()
 
 	const tabsReducer = (state, newState) => {
@@ -284,15 +197,38 @@ const App = () => {
 	)
 
 	const [user, setUser] = useState({
-		id: null,
-		email: "example@mail.com",
-		name: "Kernel Panic",
-		phone: null,
-		image: "https://picsum.photos/500/500",
-		position: "Mental issues team",
-		coins: 1234,
-		role: "admin",
+		id: 1,
+		address: "Москва",
+		coins: 100,
+		photo_url: "https://picsum.photos/500/500",
+		email: "ilya@vtb.ru",
+		first_name: "Илья",
+		last_name: "Николаев",
+		middle_name: "Витальевич",
+		phone: "79772671124",
+		team_id: 1,
+		first_and_last_name: "Илья Николаев",
+		rights: "admin",
 	})
+
+	useEffect(() => {
+		if (!isAuthorized) return
+		;(async () => {
+			const {user, error} = await whoami()
+			console.log(user)
+			if (error) {
+				enqueueSnackbar({
+					message: error,
+					variant: "error",
+				})
+				setIsAuthorized(false)
+			} else {
+				//setUser(user)
+				//getFirstAndLastName
+				setIsAuthorized(true)
+			}
+		})()
+	}, [isAuthorized, whoami, enqueueSnackbar])
 
 	/*const onChangeTab = useCallback(
 		newTabId => {
@@ -313,25 +249,6 @@ const App = () => {
 		},
 		[navigate, currentTab.id, tabs]
 	)
-
-	useEffect(() => {
-		if (!isAuthorized) return
-		;(async () => {
-			try {
-				const {status, data} = await getUserInfo()
-				if (status) {
-					setUser({
-						...data,
-						course: data.course || "",
-					})
-					setUserParams({
-						UserID: String(data.id),
-						email: data.email,
-					})
-				}
-			} catch (err) {}
-		})()
-	}, [isAuthorized, getUserInfo])
 
 	useEffectOnce(() => {
 		;(async () => {
