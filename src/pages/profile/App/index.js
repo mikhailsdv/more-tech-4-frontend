@@ -31,7 +31,7 @@ import Divider from "@mui/material/Divider"
 import Card from "../../../components/Card"
 import Achievement from "../../../components/Achievement"
 import SearchUser from "../../../components/SearchUser"
-import Button from "../../../components/Button"
+import Link from "../../../components/Link"
 import Image from "../../../components/Image"
 import TextField from "../../../components/TextField"
 import Typography from "../../../components/Typography"
@@ -49,6 +49,7 @@ import {FiSearch} from "react-icons/fi"
 import StarIcon from "@mui/icons-material/Star"
 
 import styles from "./index.module.scss"
+import Link_ from "../../../components/Link"
 
 const Info = props => {
 	const {icon: Icon, className, children, ...rest} = props
@@ -70,7 +71,7 @@ export default function Profile(props) {
 	const userId = Number(idParam) || user.id
 	const [userData, setUserData] = useState(idParam ? null : user)
 	const [achievements, setAchievements] = useState([])
-	const [rdOpen, setRdOpen] = useState(true)
+	const [rdOpen, setRdOpen] = useState(false)
 
 	const [coworkers, setCoworkers] = useState(
 		[...Array(6)].map((_, index) => ({
@@ -306,12 +307,24 @@ export default function Profile(props) {
 
 							{achievements.length > 0 && (
 								<Card>
-									<Typography
-										variant={"h5"}
-										className={"mb-5"}
+									<div
+										className={"flex mb-5 justify-between"}
 									>
-										Ачивки
-									</Typography>
+										<Typography
+											variant={"h5"}
+											className={"mb-5"}
+										>
+											Ачивки
+										</Typography>
+										<Link
+											internal
+											to={"#"}
+											underline={"always"}
+											onClick={() => setRdOpen(true)}
+										>
+											Смотреть все
+										</Link>
+									</div>
 									<div className={styles.achievements}>
 										{achievements.map(item => (
 											<Achievement

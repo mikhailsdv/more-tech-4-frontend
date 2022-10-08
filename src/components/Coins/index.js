@@ -10,6 +10,7 @@ import styles from "./index.module.scss"
 //Компонент монеток.
 export default function Coins(props) {
 	const {
+		prepend = null,
 		amount, //number|Количество монет
 		inline, //bool|Передайте `true`, если компонент является инлайновым.
 		emphasis = "medium", //str|Вариант начертания текста.|`"medium"`
@@ -35,6 +36,7 @@ export default function Coins(props) {
 				emphasis={emphasis}
 				className={classnames(styles.amount, classes.amount)}
 			>
+				{prepend}
 				{numberWithSpaces(amount)}
 			</Typography>
 			<CoinIcon className={classnames(styles.icon, classes.icon)} />
