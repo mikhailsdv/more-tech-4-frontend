@@ -10,6 +10,9 @@ import Typography from "@mui/material/Typography"
 import Tooltip from "../Tooltip"
 import DrawerItem from "../DrawerItem"
 import Link from "../Link"
+import Fab from "@mui/material/Fab"
+
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded"
 
 import styles from "./index.module.scss"
 import {useLocation} from "react-router-dom"
@@ -63,6 +66,7 @@ const Content = props => {
 const Drawer_ = props => {
 	const {open, setState, drawerToggle, items, className, ...rest} = props
 	const onClose = useCallback(() => setState(false), [])
+	const onOpen = useCallback(() => setState(true), [])
 
 	return (
 		<>
@@ -74,7 +78,7 @@ const Drawer_ = props => {
 					}}
 					PaperProps={{"data-open": open}}
 					variant="permanent"
-					onMouseOver={() => setState(true)}
+					onMouseOver={onOpen}
 					onMouseOut={onClose}
 				>
 					<Content {...props} isMobile={false} />
@@ -82,19 +86,24 @@ const Drawer_ = props => {
 			</Hidden>
 
 			<Hidden smUp>
-				<Drawer
-					{...rest}
-					ModalProps={{
-						keepMounted: true,
-					}}
-					classes={{
-						paper: classnames(styles.paper, className),
-					}}
-					onClose={onClose}
-					open={open}
-				>
-					<Content {...props} isMobile={true} />
-				</Drawer>
+				<>
+					<Fab className={styles.fab} onClick={onOpen}>
+						<MenuRoundedIcon className={styles.icon} />
+					</Fab>
+					<Drawer
+						{...rest}
+						ModalProps={{
+							keepMounted: true,
+						}}
+						classes={{
+							paper: classnames(styles.paper, className),
+						}}
+						onClose={onClose}
+						open={open}
+					>
+						<Content {...props} isMobile={true} />
+					</Drawer>
+				</>
 			</Hidden>
 		</>
 	)

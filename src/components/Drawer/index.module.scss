@@ -53,3 +53,14 @@
 		cursor: pointer;
 	}
 }
+
+.fab {
+	position: fixed;
+	bottom: 16px;
+	left: 16px;
+	background-color: white;
+
+	.icon {
+		color: $hover-color;
+	}
+}

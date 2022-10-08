@@ -29,6 +29,7 @@ import Loading from "../components/Loading"
 //import SelectSubject from "components/SelectSubject"
 import Launch from "../components/Launch"
 import Drawer from "../components/Drawer"
+import Fab from "@mui/material/Fab"
 //import BottomNavigation from "components/BottomNavigation"
 //import Header from "components/Header"
 //import ErrorMessageBody from "components/ErrorMessageBody"
@@ -227,13 +228,14 @@ const App = () => {
 		if (!isAuthorized) return
 		;(async () => {
 			const {user, error} = await whoami()
-			if (error || !user) {
+			setIsAuthorized(true)
+			/*if (error || !user) {
 				setIsAuthorized(false)
 			} else {
 				//setUser(user)
 				//getFirstAndLastName
 				setIsAuthorized(true)
-			}
+			}*/
 			setIsVerifyingAuthorization(false)
 		})()
 	}, [isAuthorized, whoami, enqueueSnackbar])

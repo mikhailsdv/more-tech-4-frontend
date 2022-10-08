@@ -23,6 +23,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-imask": "^6.4.3",
+    "react-qr-scanner": "^1.0.0-alpha.11",
     "react-router-dom": "^6.4.1",
     "react-router-scroll-to-top": "^1.2.0",
     "react-scripts": "5.0.1",
