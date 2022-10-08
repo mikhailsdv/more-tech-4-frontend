@@ -1,6 +1,7 @@
 import React, {useCallback} from "react"
 import classnames from "classnames"
 import UserContext from "../../contexts/user"
+import {getImage, getFirstAndLastName} from "../../js/utils"
 
 //import Badge from "-@mui/material/Badge"
 import Drawer from "@mui/material/Drawer"
@@ -26,12 +27,12 @@ const Content = props => {
 	return (
 		<>
 			<UserContext.Consumer>
-				{value => (
+				{({user}) => (
 					<Link to={"/profile"} internal block>
 						<div className={styles.header}>
 							<Avatar
 								alt={"userpic"}
-								src={"https://picsum.photos/100/100"}
+								src={getImage(user.photo_id)}
 								className={classnames(
 									styles.avatar,
 									isProfileActive && styles.active
@@ -39,10 +40,10 @@ const Content = props => {
 							/>
 							<div className={styles.user}>
 								<Typography variant={"subtitle1bold"}>
-									{value.user.first_and_last_name}
+									{getFirstAndLastName(user)}
 								</Typography>
 								<Typography variant={"body2"}>
-									{value.user.email}
+									{user.email}
 								</Typography>
 							</div>
 						</div>

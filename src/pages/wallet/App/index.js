@@ -61,7 +61,7 @@ const staff = [...Array(6)].map((_, index) => (
 	</div>
 ))
 
-export default function Profile(props) {
+export default function Wallet(props) {
 	const {user} = useContext(UserContext)
 	//const {getUserScoresGraph, changePassword, setToken, resetToken} = useApi()
 

@@ -7,8 +7,8 @@
 	{
 		"name": "who",
 		"url": "/who",
-		"method": "get",
-		"params": ["id"]
+		"method": "post",
+		"params": ["user_id"]
 	},
 	{
 		"name": "login",
@@ -40,7 +40,6 @@
 		"method": "post",
 		"params": ["email", "name"]
 	},
-
 	{
 		"name": "uploadPhoto",
 		"url": "/upload_photo",

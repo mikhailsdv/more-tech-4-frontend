@@ -211,31 +211,33 @@ const App = () => {
 
 	const [user, setUser] = useState({
 		id: 1,
-		address: "Москва",
-		coins: 100,
-		photo_url: "https://picsum.photos/500/500",
-		email: "ilya@vtb.ru",
-		first_name: "Илья",
-		last_name: "Николаев",
-		middle_name: "Витальевич",
-		phone: "79772671124",
-		team_id: 1,
-		first_and_last_name: "Илья Николаев",
-		rights: "admin",
+		address: "",
+		coins: 0,
+		photo_id: "",
+		email: "",
+		first_name: "",
+		last_name: "",
+		middle_name: "",
+		phone: "",
+		team_id: null,
+		rights: 1,
 	})
 
 	useEffect(() => {
 		if (!isAuthorized) return
 		;(async () => {
-			const {user, error} = await whoami()
-			setIsAuthorized(true)
-			/*if (error || !user) {
+			const {user, balance, error} = await whoami()
+			//setIsAuthorized(true)
+			if (error || !user) {
 				setIsAuthorized(false)
 			} else {
-				//setUser(user)
-				//getFirstAndLastName
+				setUser({
+					...user,
+					coins: balance.coinsAmount,
+					matic: balance.maticAmount,
+				})
 				setIsAuthorized(true)
-			}*/
+			}
 			setIsVerifyingAuthorization(false)
 		})()
 	}, [isAuthorized, whoami, enqueueSnackbar])

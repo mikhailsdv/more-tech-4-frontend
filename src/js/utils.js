@@ -46,6 +46,9 @@ const hasBlurSupport =
 
 const getFirstAndLastName = user => `${user.first_name} ${user.last_name}`
 
+const getImage = filename =>
+	`${process.env.REACT_APP_API_BASE_URL}/photo/${filename}`
+
 module.exports = {
 	pluralize,
 	arrayRandom,
@@ -54,4 +57,5 @@ module.exports = {
 	numberWithSpaces,
 	hasBlurSupport,
 	getFirstAndLastName,
+	getImage,
 }
