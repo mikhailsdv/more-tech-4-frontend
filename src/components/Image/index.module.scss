@@ -12,16 +12,3 @@
 		background-color: transparent;
 	}
 }
-
-.error {
-	@extend .root;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	.icon {
-		width: 32px;
-		height: 32px;
-		color: $emphasis-outlined;
-	}
-}

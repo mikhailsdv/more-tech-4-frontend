@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.paper {
+	width: 500px;
+	@media screen and (max-width: $md) {
+		width: 100%;
+	}
+
+	.closeIconWrapper {
+		$wrapper-size: 24px;
+		$icon-size: 18px;
+		position: absolute;
+		top: 22px;
+		right: 22px;
+		width: $wrapper-size;
+		height: $wrapper-size;
+		padding: ($wrapper-size - $icon-size) / 2;
+		z-index: 2;
+		outline: none;
+
+		.closeIcon {
+			position: relative;
+			width: $icon-size;
+			height: $icon-size;
+			color: $emphasis-outlined;
+			cursor: pointer;
+		}
+	}
+
+	.inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+}

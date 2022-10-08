@@ -16,6 +16,7 @@ const _Autocomplete = props => {
 		onInputChange,
 		renderOption,
 		label,
+		textFieldProps = {},
 		className,
 		...rest
 	} = props
@@ -36,7 +37,12 @@ const _Autocomplete = props => {
 				reason !== "reset" && onInputChange(value)
 			}}
 			renderInput={params => (
-				<TextField {...params} label={label} fullWidth />
+				<TextField
+					{...params}
+					label={label}
+					fullWidth
+					{...textFieldProps}
+				/>
 			)}
 			renderOption={renderOption}
 			{...rest}

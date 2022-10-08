@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.preview {
+	position: relative;
+	width: 92px;
+	height: 92px;
+
+	.img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+	}
+}
+
+.full {
+	position: relative;
+	width: 100%;
+	padding: 16px;
+	border-radius: 8px;
+	border: 1px solid lightgray;
+	display: flex;
+
+	.img {
+		flex: none;
+		width: 92px;
+		height: 92px;
+		margin-right: 12px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.footer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width: $md) {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+	}
+
+	.links {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		display: flex;
+	}
+}

@@ -17,4 +17,17 @@
 
 .userpic {
 	width: 100%;
+	border-radius: 8px;
+}
+
+.achievements {
+	display: flex;
+	overflow: auto;
+	flex-wrap: nowrap;
+	height: 110px;
+
+	& > * {
+		flex: none;
+		margin-right: 20px;
+	}
 }

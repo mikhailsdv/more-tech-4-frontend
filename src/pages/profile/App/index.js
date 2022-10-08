@@ -29,11 +29,14 @@ import useURLParams from "../../../hooks/useURLParams"
 import Grid from "@mui/material/Grid"
 import Divider from "@mui/material/Divider"
 import Card from "../../../components/Card"
+import Achievement from "../../../components/Achievement"
+import SearchUser from "../../../components/SearchUser"
 import Button from "../../../components/Button"
 import Image from "../../../components/Image"
 import TextField from "../../../components/TextField"
 import Typography from "../../../components/Typography"
 import Staff from "../../../components/Staff"
+import RightDrawer from "../../../components/RightDrawer"
 
 import {
 	MdOutlinePinDrop,
@@ -59,12 +62,15 @@ const Info = props => {
 }
 
 export default function Profile(props) {
+	const navigate = useNavigate()
 	const {user} = useContext(UserContext)
 	const {whoami, who, listCoworkers, listAchievements} = useApi()
 	const {enqueueSnackbar} = useSnackbar()
 	const {id: idParam} = useURLParams()
 	const userId = Number(idParam) || user.id
 	const [userData, setUserData] = useState(idParam ? null : user)
+	const [achievements, setAchievements] = useState([])
+	const [rdOpen, setRdOpen] = useState(true)
 
 	const [coworkers, setCoworkers] = useState(
 		[...Array(6)].map((_, index) => ({
@@ -88,17 +94,10 @@ export default function Profile(props) {
 			}
 		})()
 		;(async () => {
-			const a = await listAchievements({user_id: userId})
-			console.log(a)
-			/*if (error) {
-				enqueueSnackbar({
-					message: error,
-					variant: "error",
-				})
-			} else {
-				setAchivements(users.filter(item => item.id !== userId))
-				//setUser(data)
-			}*/
+			const response = await listAchievements({user_id: userId})
+			if (Array.isArray(response)) {
+				setAchievements(response)
+			}
 		})()
 		;(async () => {
 			idParam && setUserData(null)
@@ -137,178 +136,228 @@ export default function Profile(props) {
 	}, [resetToken, navigate, setIsAuthorized])*/
 
 	return (
-		<Grid container spacing={3}>
-			<Grid item xs={12} sm={12} md={5} lg={3}>
-				{userData && (
-					<Card>
-						<Image
-							src={getImage(userData.photo_id)}
-							className={classnames(styles.userpic, "mb-5")}
+		<>
+			<RightDrawer
+				classes={{paper: "p-4"}}
+				isOpen={rdOpen}
+				onClose={() => setRdOpen(false)}
+			>
+				<Typography variant={"h5"} className={"mb-4"}>
+					Мои ачивки
+				</Typography>
+				<Divider />
+				<div className={"mt-4"}>
+					{achievements.map(item => (
+						<Achievement
+							key={item.id}
+							{...item}
+							className={"mb-4"}
 						/>
-						<Typography variant={"h5"} gutterBottom>
-							{getFirstAndLastName(userData)}
-						</Typography>
-						<Typography
-							variant={"body2"}
-							emphasis={"medium"}
-							className={"mb-8"}
-						>
-							{userData.position}
-						</Typography>
+					))}
+				</div>
+			</RightDrawer>
 
-						<Typography
-							variant={"subtitle1bold"}
-							emphasis={"medium"}
-							className={"mb-8"}
-							component={"p"}
-						>
-							<StarIcon className={"text-yellow-400 mr-2"} />
-							Поблагодарили: {userData.thanksgivings}{" "}
-							{pluralize(
-								userData.thanksgivings,
-								"раз",
-								"раза",
-								"раз"
-							)}
-						</Typography>
-
-						<Typography variant={"h6"} className={"mb-4"}>
-							Адрес
-						</Typography>
-						<Info icon={MdOutlinePinDrop} className={"mb-8"}>
-							<Typography variant={"body1"}>
-								{userData.address}
-							</Typography>
-						</Info>
-
-						<Typography variant={"h6"} className={"mb-4"}>
-							Контакты
-						</Typography>
-						<Info icon={MdCall} className={"mb-4"}>
-							<Typography variant={"body1"}>
-								+{userData.phone}
-							</Typography>
-						</Info>
-						<Info icon={MdOutlineMailOutline} className={"mb-8"}>
-							<Typography variant={"body1"}>
-								{userData.email}
-							</Typography>
-						</Info>
-
-						<Typography variant={"h6"} className={"mb-4"}>
-							Полезные ссылки
-						</Typography>
-						<Info icon={MdOutlineDraw} className={"mb-4"}>
-							<Typography variant={"body1"}>Портфолио</Typography>
-						</Info>
-						<Info icon={MdSocialDistance}>
-							<Typography variant={"body1"}>Habr</Typography>
-						</Info>
-					</Card>
-				)}
-			</Grid>
-			<Grid item xs={12} sm={12} md={7} lg={9}>
-				<Grid container spacing={3}>
-					<Grid item xs={12} sm={12} md={12} lg={8}>
-						<Card className={"mb-6"}>
-							<TextField
-								value={searchValue}
-								onChange={e => setSearchValue(e.target.value)}
-								icon={FiSearch}
-								label={"Поиск по сотрудникам"}
+			<Grid container spacing={3}>
+				<Grid item xs={12} sm={12} md={5} lg={3}>
+					{userData && (
+						<Card>
+							<img
+								alt={"userpic"}
+								src={getImage(userData.photo_id)}
+								className={classnames(styles.userpic, "mb-5")}
 							/>
-						</Card>
-
-						<Card className={"mb-6"}>
-							<Typography variant={"h5"} className={"mb-5"}>
-								Обо мне
-							</Typography>
-							<Typography
-								variant={"subtitle2bold"}
-								className={"mb-1"}
-								emphasis={"medium"}
-								component={"p"}
-							>
-								Чем я занимаюсь в ВТБ
-							</Typography>
-							<Typography variant={"body1"} className={"mb-4"}>
-								Продуктовый дизайнер с техническим бэкграундом.
-								В ВТБ отвечаю за развитие программы лояльности к
-								бренду.
-							</Typography>
-
-							<Divider />
-
-							<Typography
-								variant={"subtitle2bold"}
-								className={"mb-1 mt-4"}
-								emphasis={"medium"}
-								component={"p"}
-							>
-								Предыдущее место работы
-							</Typography>
-							<Typography variant={"body1"} className={"mb-4"}>
-								Яндекс
-							</Typography>
-
-							<Divider />
-
-							<Typography
-								variant={"subtitle2bold"}
-								className={"mb-1 mt-4"}
-								emphasis={"medium"}
-								component={"p"}
-							>
-								Умею лучше всего
-							</Typography>
-							<Typography variant={"body1"}>
-								Лучше всего разбираюсь в Android и в Web. 1,5
-								года руководил технической командой, где
-								научился понимать и общаться с разработкой. Год
-								проработал со стартапами из Сколково, умею
-								быстро проектировать MVP.
-							</Typography>
-						</Card>
-
-						<Card>
-							<Typography variant={"h5"} className={"mb-5"}>
-								Ачивки
-							</Typography>
-						</Card>
-					</Grid>
-					<Grid item xs={12} sm={12} md={12} lg={4}>
-						<Card className={"mb-6"}>
-							<Typography variant={"h5"} className={"mb-5"}>
-								Руководитель
-							</Typography>
-
-							<Divider />
-							<Staff {...manager} />
-							<Divider />
-						</Card>
-						<Card>
 							<Typography variant={"h5"} gutterBottom>
-								Коллеги
+								{getFirstAndLastName(userData)}
 							</Typography>
 							<Typography
 								variant={"body2"}
-								component={"p"}
-								className={"mb-5"}
+								emphasis={"medium"}
+								className={"mb-8"}
 							>
-								Название отдела / команды
+								{userData.position}
 							</Typography>
 
-							<Divider />
-							{coworkers.map(item => (
-								<div key={item.id}>
-									<Staff {...item} />
-									<Divider />
-								</div>
-							))}
+							<Typography
+								variant={"subtitle1bold"}
+								emphasis={"medium"}
+								className={"mb-8"}
+								component={"p"}
+							>
+								<StarIcon className={"text-yellow-400 mr-2"} />
+								Поблагодарили: {userData.thanksgivings}{" "}
+								{pluralize(
+									userData.thanksgivings,
+									"раз",
+									"раза",
+									"раз"
+								)}
+							</Typography>
+
+							<Typography variant={"h6"} className={"mb-4"}>
+								Адрес
+							</Typography>
+							<Info icon={MdOutlinePinDrop} className={"mb-8"}>
+								<Typography variant={"body1"}>
+									{userData.address}
+								</Typography>
+							</Info>
+
+							<Typography variant={"h6"} className={"mb-4"}>
+								Контакты
+							</Typography>
+							<Info icon={MdCall} className={"mb-4"}>
+								<Typography variant={"body1"}>
+									+{userData.phone}
+								</Typography>
+							</Info>
+							<Info
+								icon={MdOutlineMailOutline}
+								className={"mb-8"}
+							>
+								<Typography variant={"body1"}>
+									{userData.email}
+								</Typography>
+							</Info>
+
+							<Typography variant={"h6"} className={"mb-4"}>
+								Полезные ссылки
+							</Typography>
+							<Info icon={MdOutlineDraw} className={"mb-4"}>
+								<Typography variant={"body1"}>
+									Портфолио
+								</Typography>
+							</Info>
+							<Info icon={MdSocialDistance}>
+								<Typography variant={"body1"}>Habr</Typography>
+							</Info>
 						</Card>
+					)}
+				</Grid>
+				<Grid item xs={12} sm={12} md={7} lg={9}>
+					<Grid container spacing={3}>
+						<Grid item xs={12} sm={12} md={12} lg={8}>
+							<Card className={"mb-6"}>
+								<SearchUser
+									onChange={foundUser => {
+										navigate(`/profile?id=${foundUser.id}`)
+									}}
+									by={"name"}
+									textFieldProps={{icon: FiSearch}}
+									label={"Поиск по сотрудникам"}
+								/>
+							</Card>
+
+							<Card className={"mb-6"}>
+								<Typography variant={"h5"} className={"mb-5"}>
+									Обо мне
+								</Typography>
+								<Typography
+									variant={"subtitle2bold"}
+									className={"mb-1"}
+									emphasis={"medium"}
+									component={"p"}
+								>
+									Чем я занимаюсь в ВТБ
+								</Typography>
+								<Typography
+									variant={"body1"}
+									className={"mb-4"}
+								>
+									Продуктовый дизайнер с техническим
+									бэкграундом. В ВТБ отвечаю за развитие
+									программы лояльности к бренду.
+								</Typography>
+
+								<Divider />
+
+								<Typography
+									variant={"subtitle2bold"}
+									className={"mb-1 mt-4"}
+									emphasis={"medium"}
+									component={"p"}
+								>
+									Предыдущее место работы
+								</Typography>
+								<Typography
+									variant={"body1"}
+									className={"mb-4"}
+								>
+									Яндекс
+								</Typography>
+
+								<Divider />
+
+								<Typography
+									variant={"subtitle2bold"}
+									className={"mb-1 mt-4"}
+									emphasis={"medium"}
+									component={"p"}
+								>
+									Умею лучше всего
+								</Typography>
+								<Typography variant={"body1"}>
+									Лучше всего разбираюсь в Android и в Web.
+									1,5 года руководил технической командой, где
+									научился понимать и общаться с разработкой.
+									Год проработал со стартапами из Сколково,
+									умею быстро проектировать MVP.
+								</Typography>
+							</Card>
+
+							{achievements.length > 0 && (
+								<Card>
+									<Typography
+										variant={"h5"}
+										className={"mb-5"}
+									>
+										Ачивки
+									</Typography>
+									<div className={styles.achievements}>
+										{achievements.map(item => (
+											<Achievement
+												key={item.id}
+												{...item}
+												preview
+											/>
+										))}
+									</div>
+								</Card>
+							)}
+						</Grid>
+						<Grid item xs={12} sm={12} md={12} lg={4}>
+							<Card className={"mb-6"}>
+								<Typography variant={"h5"} className={"mb-5"}>
+									Руководитель
+								</Typography>
+
+								<Divider />
+								<Staff {...manager} />
+								<Divider />
+							</Card>
+							<Card>
+								<Typography variant={"h5"} gutterBottom>
+									Коллеги
+								</Typography>
+								<Typography
+									variant={"body2"}
+									component={"p"}
+									className={"mb-5"}
+								>
+									Название отдела / команды
+								</Typography>
+
+								<Divider />
+								{coworkers.map(item => (
+									<div key={item.id}>
+										<Staff {...item} />
+										<Divider />
+									</div>
+								))}
+							</Card>
+						</Grid>
 					</Grid>
 				</Grid>
 			</Grid>
-		</Grid>
+		</>
 	)
 }

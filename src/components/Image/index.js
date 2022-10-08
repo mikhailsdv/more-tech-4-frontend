@@ -3,8 +3,6 @@ import React, {useEffect, useRef, useState} from "react"
 import classnames from "classnames"
 import styles from "./index.module.scss"
 
-import {TbPhotoOff} from "react-icons/tb"
-
 export default function Image(props) {
 	const {src, className, classes = {}, ...rest} = props
 
@@ -34,14 +32,15 @@ export default function Image(props) {
 		src ? setImageSrc(src) : setIsError(true)
 	}, [src])
 
-	return isError ? (
-		<div className={styles.error}>
-			<TbPhotoOff className={styles.icon} />
-		</div>
-	) : (
+	const actualSrc = isError
+		? "https://metst.ru/saransk/upload/nofound.png"
+		: imageSrc
+
+	return (
 		<img
+			key={actualSrc}
 			alt=""
-			src={imageSrc}
+			src={actualSrc}
 			ref={imgEl}
 			className={classnames(
 				styles.root,

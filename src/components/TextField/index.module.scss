@@ -50,6 +50,7 @@
 	}
 
 	.input {
+		background-color: transparent !important;
 		padding: 23px 16px 10px 16px;
 
 		&:-internal-autofill-previewed,
