@@ -69,14 +69,14 @@ export default function Profile(props) {
 	useEffect(() => {
 		;(async () => {
 			//setIsLoadingProfile(true)
-			const {error, users} = await listCoworkers()
+			const {error, users} = await listCoworkers({user_id: user.id})
 			if (error) {
 				enqueueSnackbar({
 					message: error,
 					variant: "error",
 				})
 			} else {
-				setCoworkers(users.filter(item => item.id !== user.id))
+				//setCoworkers(users.filter(item => item.id !== user.id))
 				//setUser(data)
 			}
 			//setIsLoadingProfile(false)

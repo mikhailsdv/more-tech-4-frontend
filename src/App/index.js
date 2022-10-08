@@ -48,7 +48,7 @@ import Drawer from "../components/Drawer"
 
 import {TbComponents} from "react-icons/tb"
 import {FaDollarSign} from "react-icons/fa"
-import {MdShoppingBasket} from "react-icons/md"
+import {MdQrCodeScanner, MdShoppingBasket} from "react-icons/md"
 import {BsFillAwardFill} from "react-icons/bs"
 
 import styles from "./index.module.scss"
@@ -64,6 +64,11 @@ const drawerItems = [
 		title: "Shop",
 		url: "/shop",
 		icon: MdShoppingBasket,
+	},
+	{
+		title: "Сканировать QR",
+		url: "/qr",
+		icon: MdQrCodeScanner,
 	},
 ]
 
@@ -101,6 +106,13 @@ const allPages = [
 		url: "/shop",
 		component: lazy(() => import("../pages/shop/App")),
 		//component: ShopPage,
+		private: true,
+	},
+	{
+		name: "Сканировать QR",
+		url: "/qr",
+		component: lazy(() => import("../pages/qr/App")),
+		//component: LoginPage,
 		private: true,
 	},
 
@@ -179,7 +191,7 @@ const App = () => {
 
 	const [isAuthorized, setIsAuthorized] = useState(true)
 	const [isVerifyingAuthorization, setIsVerifyingAuthorization] =
-		useState(false)
+		useState(true)
 
 	const [drawerOpen, setDrawerOpen] = useState(false)
 	/*const [currentTab, setCurrentTab] = useState({})
@@ -215,18 +227,14 @@ const App = () => {
 		if (!isAuthorized) return
 		;(async () => {
 			const {user, error} = await whoami()
-			console.log(user)
-			if (error) {
-				enqueueSnackbar({
-					message: error,
-					variant: "error",
-				})
+			if (error || !user) {
 				setIsAuthorized(false)
 			} else {
 				//setUser(user)
 				//getFirstAndLastName
 				setIsAuthorized(true)
 			}
+			setIsVerifyingAuthorization(false)
 		})()
 	}, [isAuthorized, whoami, enqueueSnackbar])
 

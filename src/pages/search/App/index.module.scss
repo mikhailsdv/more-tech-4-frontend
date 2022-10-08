@@ -1,0 +1,29 @@
+@import "styles/variables.scss";
+
+.highlighted {
+	color: $light_block-color;
+	background-color: $light_main-color;
+	#{$dark-theme} & {
+		color: $dark_block-color;
+		background-color: $dark_regular-text-color;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	& > * {
+		width: 100%;
+	}
+}
+
+.a {
+	color: $light_main-color;
+	text-decoration: underline;
+	cursor: pointer;
+	#{$dark-theme} & {
+		color: $dark_regular-text-color;
+	}
+}

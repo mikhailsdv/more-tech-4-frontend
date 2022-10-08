@@ -87,7 +87,7 @@ export default function Profile(props) {
 		navigate("/about")
 	}, [resetToken, navigate, setIsAuthorized])*/
 
-	const roleComponents = {
+	/*const roleComponents = {
 		admin: <Admin />,
 		user: <User />,
 	}
@@ -96,5 +96,13 @@ export default function Profile(props) {
 		<UserContext.Consumer>
 			{({user}) => roleComponents[user.rights]}
 		</UserContext.Consumer>
+	)*/
+
+	return (
+		<>
+			<User />
+			<br />
+			<br /> <Admin />
+		</>
 	)
 }

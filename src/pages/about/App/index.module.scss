@@ -1,0 +1,253 @@
+@import "styles/variables.scss";
+
+.logoWrapper {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+
+	.logo {
+		width: 70px;
+		height: 70px;
+		flex: none;
+	}
+}
+
+.divider {
+	opacity: 0.2;
+	background-color: $light_placeholder-color;
+	#{$dark-theme} & {
+		background-color: $dark_placeholder-color;
+	}
+}
+
+.textAlignCenter {
+	width: 100%;
+	padding: 0 18px;
+	text-align: center;
+}
+
+.heart {
+	cursor: pointer;
+}
+.bigHeart {
+	font-size: 50px;
+}
+
+.buttons {
+	overflow: hidden;
+	border-radius: 22px;
+
+	.instagram {
+		background-color: #dc2743;
+		background-image: linear-gradient(
+			45deg,
+			#f09433 0%,
+			#e6683c 25%,
+			#dc2743 50%,
+			#cc2366 75%,
+			#bc1888 100%
+		);
+		#{$dark-theme} & {
+			color: white;
+		}
+	}
+
+	.whatsapp {
+		background-color: #f5d020;
+		background-image: linear-gradient(315deg, #16f569 0%, #25d366 74%);
+		#{$dark-theme} & {
+			color: white;
+		}
+	}
+
+	.twitter {
+		background-color: rgb(29, 155, 240);
+	}
+}
+
+.titleSubtitle {
+	.title {
+		width: 100%;
+		line-height: 1.2em;
+		margin-bottom: 8px;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: -0.7px;
+		color: $light_regular-text-color;
+		#{$dark-theme} & {
+			color: $dark_regular-text-color;
+		}
+	}
+
+	.subtitle {
+		font-size: 17px;
+		line-height: 1.2em;
+		font-weight: 500;
+		letter-spacing: -0.4px;
+		font-weight: 400;
+		color: $light_placeholder-color;
+		#{$dark-theme} & {
+			color: $dark_placeholder-color;
+		}
+	}
+}
+
+.digits {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.digit {
+		width: calc(50% - 6px);
+		margin: 6px 0;
+		padding: 16px;
+		border-radius: 16px;
+		border: 1px solid $light_dark-faded-color;
+		#{$dark-theme} & {
+			border: 1px solid $dark_light-faded-color;
+			background-color: $dark_block-color;
+		}
+
+		.title {
+			color: $light_main-color;
+			font-size: 26px;
+			font-weight: 700;
+			white-space: nowrap;
+			margin-bottom: 6px;
+
+			.icon {
+				color: inherit;
+				vertical-align: bottom;
+				display: inline;
+				width: 1em;
+				height: 1em;
+			}
+		}
+
+		.subtitle {
+			font-size: 16px;
+			line-height: 1.1em;
+			color: $light_placeholder-color;
+			#{$dark-theme} & {
+				color: $dark_placeholder-color;
+			}
+		}
+	}
+}
+
+.features {
+	.feature {
+		.title {
+			margin-bottom: 10px;
+
+			.icon {
+				vertical-align: sub;
+			}
+
+			h6 {
+				line-height: 1.2em;
+			}
+		}
+
+		.description {
+			font-size: 16px;
+			color: $light_placeholder-color;
+			#{$dark-theme} & {
+				color: $dark_placeholder-color;
+			}
+		}
+	}
+}
+
+.plans {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.plan {
+		width: calc(50% - 6px);
+		border-radius: 16px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		&[data-color="yellow"] {
+			background-color: #f5d020;
+			background-image: linear-gradient(315deg, #f5d020 0%, #f57e03 74%);
+			#{$dark-theme} & {
+				background-color: darken(#f5d020, 20%);
+				background-image: linear-gradient(
+					315deg,
+					darken(#f5d020, 20%) 0%,
+					darken(#f57e03, 20%) 74%
+				);
+			}
+		}
+		&[data-color="blue"] {
+			background-color: #7f53ac;
+			background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+			#{$dark-theme} & {
+				background-color: darken(#7f53ac, 20%);
+				background-image: linear-gradient(
+					315deg,
+					darken(#7f53ac, 20%) 0%,
+					darken(#647dee, 20%) 74%
+				);
+			}
+		}
+		&[data-color="purple"] {
+			background-color: #eb75c9;
+			background-image: linear-gradient(315deg, #eb75c9 0%, #6734dc 74%);
+			#{$dark-theme} & {
+				background-color: darken(#eb75c9, 20%);
+				background-image: linear-gradient(
+					315deg,
+					darken(#eb75c9, 20%) 0%,
+					darken(#6734dc, 20%) 74%
+				);
+			}
+		}
+
+		.content {
+			padding: 16px;
+
+			.name {
+				color: $dark_regular-text-color;
+				font-weight: 500;
+				font-size: 18px;
+				margin-bottom: 12px;
+				white-space: nowrap;
+
+				.icon {
+					vertical-align: sub;
+					display: inline;
+				}
+			}
+
+			.price {
+				color: $dark_regular-text-color;
+				font-weight: 500;
+				font-size: 34px;
+				margin-bottom: 14px;
+			}
+
+			.description {
+				color: $dark_regular-text-color;
+				font-size: 14px;
+				font-weight: 400;
+				opacity: 0.9;
+				line-height: 1.2em;
+			}
+		}
+
+		.mtAuto {
+			margin-top: auto;
+
+			.button {
+				background-color: rgba(0, 0, 0, 0.7);
+				color: $dark_regular-text-color;
+			}
+		}
+	}
+}

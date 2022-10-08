@@ -41,7 +41,7 @@ const App = () => {
 			e.preventDefault()
 
 			setIsLoading(true)
-			const {error, token} = await signin({
+			const {error, user} = await signin({
 				login,
 				password,
 			})
@@ -52,9 +52,9 @@ const App = () => {
 					variant: "error",
 				})
 			} else {
-				setToken({token, isSession})
+				setToken({token: user.token, isSession})
 				//setUser(data)
-				setIsAuthorized(true)
+				//setIsAuthorized(true)
 				setTimeout(() => {
 					window.location.href = "/profile"
 				}, 600)
@@ -114,8 +114,8 @@ const App = () => {
 					/>
 
 					<CheckboxLabel
-						value={isSession}
-						onChange={setIsSession}
+						checked={!isSession}
+						onChange={value => setIsSession(!value)}
 						label={"Запомнить меня"}
 						className={"mb-4"}
 					/>

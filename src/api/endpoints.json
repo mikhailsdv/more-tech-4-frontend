@@ -5,6 +5,12 @@
 		"method": "get"
 	},
 	{
+		"name": "who",
+		"url": "/who",
+		"method": "get",
+		"params": ["id"]
+	},
+	{
 		"name": "login",
 		"url": "/login",
 		"method": "post",
@@ -13,12 +19,14 @@
 	{
 		"name": "listCoworkers",
 		"url": "/list_coworkers",
-		"method": "get"
+		"method": "post",
+		"params": ["user_id"]
 	},
 	{
-		"name": "getAchievements",
-		"url": "/get_achievements",
-		"method": "get"
+		"name": "listAchievements",
+		"url": "/list_achievements",
+		"method": "post",
+		"params": ["user_id"]
 	},
 	{
 		"name": "searchTeam",

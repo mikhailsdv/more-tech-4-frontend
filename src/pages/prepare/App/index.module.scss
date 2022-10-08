@@ -1,0 +1,21 @@
+@import "styles/variables.scss";
+/*
+.shuffle {
+	border-radius: 16px !important;
+}*/
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-radius: 22px;
+	overflow: hidden;
+
+	.shuffle,
+	.reset {
+		width: 50%;
+	}
+	.session {
+		width: 100%;
+	}
+}

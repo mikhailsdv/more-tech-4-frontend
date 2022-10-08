@@ -1,0 +1,8 @@
+@import "styles/variables.scss";
+
+.typography {
+	color: $light_regular-text-color;
+	#{$dark-theme} & {
+		color: $dark_regular-text-color;
+	}
+}
