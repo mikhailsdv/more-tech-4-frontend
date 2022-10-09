@@ -1,5 +1,5 @@
 User-agent: *
 Crawl-delay: 1
-Host: testnik.kz
+Host: preview.mishasaidov.com
 Disallow: /admin/
-Sitemap: https://testnik.kz/sitemap.xml
+Sitemap: https://preview.mishasaidov.com/sitemap.xml
