@@ -1,4 +1,4 @@
-# VTB Stuff FE
+# VTB Staff FE
 
 ![Текст с описанием картинки](/src/images/1-2.png)
 
