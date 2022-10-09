@@ -1,8 +1,8 @@
-# Link (совпадает с названием папки)
+# Link
 
-Universal link component. (описание)
+Universal link component.
 
-### props (пропсы есть в файле index.js)
+### props
 
 | prop          | type | description                                                              | default |
 |---------------|------|--------------------------------------------------------------------------|---------|

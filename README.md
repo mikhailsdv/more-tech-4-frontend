@@ -15,9 +15,9 @@
 
 Мы написали документацию к некоторым компонентам. Она будет дополняться в будущем.
 
+- [Link](/src/components/Link)
 - [Chip](/src/components/Chip)
 - [Button](/src/components/Button)
-- [Link](/src/components/Link)
 
 Далее идет стандартная инструкция от `create-react-app`.
 
