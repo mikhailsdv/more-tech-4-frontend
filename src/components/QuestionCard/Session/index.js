@@ -94,16 +94,9 @@ const SessionQuestionCard = props => {
 			data-session-question-id={id}
 			className={classnames(commonStyles.root, className, classes.root)}
 		>
-			<Typography
-				title={
-					<span className={commonStyles.title}>
-						{typeof index === "number" && (
-							<div className={commonStyles.index}>{index}</div>
-						)}
-						{question}
-					</span>
-				}
-			/>
+			<Typography variant={"h6"} className={"mb-6"}>
+				{typeof index === "number" && index + 1}. {question}
+			</Typography>
 			<div className={commonStyles.content}>
 				{variants.map((item, index) => {
 					return (

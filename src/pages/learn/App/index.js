@@ -2,6 +2,7 @@ import React, {useContext, useState} from "react"
 import UserContext from "../../../contexts/user"
 import useApi from "../../../api/useApi"
 import classnames from "classnames"
+import useDialog from "../../../hooks/useDialog"
 
 import Grid from "@mui/material/Grid"
 import Card from "../../../components/Card"
@@ -23,17 +24,52 @@ import {
 	MdFavoriteBorder,
 } from "react-icons/md"
 import styles from "./index.module.scss"
+import test from "./test.json"
 import Button from "../../../components/Button"
+import RemoveCircleRoundedIcon from "@mui/icons-material/RemoveCircleRounded"
 
 export default function Shop(props) {
 	const [tab, setTab] = useState("unfinished")
 	const [category, setCategory] = useState("required")
-	const [isCourseOpen, setIsCourseOpen] = useState(true)
+	const [isCourseOpen, setIsCourseOpen] = useState(false)
 	const [showTest, setShowTest] = useState(false)
+
+	const {
+		open: openDialog,
+		close: closeDialog,
+		props: dialogProps,
+		Component: Dialog,
+	} = useDialog()
 
 	if (showTest) {
 		return (
 			<>
+				<Dialog
+					{...dialogProps}
+					maxWidth={"sm"}
+					title="Результаты тестирования"
+					actions={
+						<>
+							<Button
+								variant="primary"
+								small
+								onClick={closeDialog}
+							>
+								Ок
+							</Button>
+						</>
+					}
+				>
+					Всего вопросов: 25
+					<br />
+					Правильных: 18
+					<br />
+					Неправильных: 7<br />
+					<br />
+					<b>Процент: 72%</b>
+					<br />
+				</Dialog>
+
 				<Card className={"mb-4"}>
 					<dib className={"py-1 px-2 bg-sky-600 rounded-md"}>
 						<Typography
@@ -54,15 +90,24 @@ export default function Shop(props) {
 					</Typography>
 				</Card>
 
-				<QuestionCard
-					isSessionPassed={false}
-					onSelectVariant={() => {}}
-					id={1}
-					is_saved={false}
-					variants={[{variant: "vvv", isRight: false}]}
-					question={"quest"}
-					index={1}
-				/>
+				{test.slice(0, 25).map((item, index) => (
+					<QuestionCard
+						key={index}
+						isSessionPassed={false}
+						onSelectVariant={() => {}}
+						id={index}
+						is_saved={false}
+						variants={item.variants}
+						question={item.question}
+						index={index}
+						className={"mb-4"}
+					/>
+				))}
+				<Card className={"mt-2"}>
+					<Button fullWidth variant={"primary"} onClick={openDialog}>
+						Сдать тест
+					</Button>
+				</Card>
 			</>
 		)
 	} else if (isCourseOpen) {
