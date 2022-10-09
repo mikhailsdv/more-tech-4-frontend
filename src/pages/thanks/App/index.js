@@ -1,131 +1,108 @@
-import React, {useState, useCallback, useContext} from "react"
+import React, {
+	useContext,
+	useCallback,
+	useState,
+	useEffect,
+	useRef,
+} from "react"
+import {
+	pluralize,
+	getFirstAndLastName,
+	numberWithSpaces,
+	getImage,
+} from "../../../js/utils"
+import UserContext from "../../../contexts/user"
 import useApi from "../../../api/useApi"
-import {useSnackbar} from "notistack"
-//import UserContext from "../../../contexts/user"
-import useEffectOnce from "../../../hooks/useEffectOnce"
-import AuthorizationContext from "../../../contexts/authorization"
-import {useNavigate} from "react-router-dom"
 import classnames from "classnames"
-import QrReader from "react-qr-scanner"
+import {useSnackbar} from "notistack"
 
-import Card from "../../../components/Card"
-import Typography from "../../../components/Typography"
-import TextField from "../../../components/TextField"
-import Button from "../../../components/Button"
-import Coins from "../../../components/Coins"
+import Grid from "@mui/material/Grid"
+import SearchUser from "../../../components/SearchUser"
 import Image from "../../../components/Image"
-import CheckboxLabel from "../../../components/CheckboxLabel"
-import Container from "@mui/material/Container"
-
-import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded"
-import areaImage from "../../../images/other/area.svg"
+import TextField from "../../../components/TextField"
+import Typography from "../../../components/Typography"
+import Staff from "../../../components/Staff"
+import Coins from "../../../components/Coins"
+import Card from "../../../components/Card"
+import Button from "../../../components/Button"
 
 import styles from "./index.module.scss"
-import coffeeImage from "../../../images/other/coffee.png"
-import lunchImage from "../../../images/other/lunch.png"
+import image from "./image.png"
 
-const images = {
-	0: coffeeImage,
-	1: lunchImage,
-}
-
-const App = () => {
+export default function Thanks(props) {
+	const {createThanksgiving} = useApi()
 	const {enqueueSnackbar} = useSnackbar()
-	//const {setUser} = useContext(UserContext)
-	const navigate = useNavigate()
+	const [foundUser, setFoundUser] = useState({})
+	const [why, setWhy] = useState("")
+	const [coins, setCoins] = useState("")
 
-	const [qrData, setQrData] = useState(null)
-	const [isPaid, setIsPaid] = useState(false)
+	const send = useCallback(async () => {
+		await createThanksgiving({
+			user_id_to: foundUser.id,
+			title: why,
+			price: Number(coins),
+		})
+		enqueueSnackbar({
+			variant: "success",
+			message: "Благодарность отправлена!",
+		})
+	}, [foundUser.id])
 
-	const onScan = useCallback(
-		data => {
-			if (!data?.text || qrData) return
-			try {
-				const [image, price, name] = data.text.split(";")
-				if (image && price && name) {
-					setQrData({image, name, price})
-				}
-			} catch (e) {}
-		},
-		[qrData]
-	)
-
-	const pay = useCallback(() => {
-		setIsPaid(true)
-	}, [])
-
-	const reset = useCallback(() => {
-		setIsPaid(false)
-		setQrData(null)
-	}, [])
-
-	return qrData ? (
-		isPaid ? (
-			<>
-				<Card className={"text-center mb-4"}>
-					<CheckCircleOutlineRoundedIcon
-						className={classnames(styles.successIcon, "mt-4")}
-					/>
-					<Typography
-						variant={"subtitle1bold"}
-						component={"div"}
-						emphasis={"medium"}
-						className={"mb-4"}
-					>
-						Спасибо! Покупа
-						<br />
-						успешно оплачена.
-					</Typography>
-				</Card>
-				<Button variant={"secondary"} fullWidth onClick={reset}>
-					Назад
-				</Button>
-			</>
-		) : (
-			<>
-				<Card className={"text-center mb-4"}>
-					<img
-						src={images[qrData.image]}
-						alt={""}
-						className={"mb-1"}
-					/>
-					<Coins
-						amount={Number(qrData.price)}
-						className={"mb-4"}
-						classes={{amount: "text-5xl", icon: "text-5xl !top-2"}}
-					/>
-					<Typography varian={"subtitle1"} emphasis={"medium"}>
-						{qrData.name}
-					</Typography>
-				</Card>
-				<Button variant={"primary"} fullWidth onClick={pay}>
-					Оплатить
-				</Button>
-			</>
-		)
-	) : (
-		<Container maxWidth="sm" className={"px-0"}>
-			<div className={styles.qrWrapper}>
-				<img src={areaImage} alt={"area"} className={styles.area} />
-				<QrReader
-					delay={1000}
-					constraints={{video: {facingMode: "environment"}}}
-					//style={previewStyle}
-					onError={console.error}
-					onScan={onScan}
-				/>
-			</div>
-			<Typography
-				variant={"subtitle1"}
-				component={"div"}
-				emphasis={"medium"}
-				className={"mt-4"}
-				align={"center"}
-			>
-				Сканируйте QR с телефона
+	return (
+		<Card>
+			<Typography variant={"h5"} gutterBottom>
+				Поблагодарить коллегу
 			</Typography>
-		</Container>
+
+			<div className={styles.c}>
+				<Image src={image} className={styles.image} />
+				<div className={styles.i}>
+					<Grid spacing={3} container>
+						<Grid item xs={12} sm={12} md={7}>
+							<SearchUser
+								key={"email"}
+								onChange={setFoundUser}
+								label={"Email коллеги"}
+								by={"email"}
+							/>
+						</Grid>
+						<Grid item xs={12} sm={12} md={5}>
+							<Staff {...foundUser} card />
+						</Grid>
+						<Grid item xs={12} sm={12} md={12}>
+							<TextField
+								value={why}
+								onChange={e => setWhy(e.target.value)}
+								//icon={FiSearch}
+								label={"За что говорим «Спасибо»?"}
+							/>
+						</Grid>
+						<Grid item xs={12} sm={12} md={12}>
+							<TextField
+								value={coins}
+								onChange={e => setCoins(e.target.value)}
+								//icon={FiSearch}
+								label={"Добавьте монет"}
+							/>
+						</Grid>
+					</Grid>
+					<div className={"flex items-center mt-5"}>
+						<Button
+							variant={"primary"}
+							disabled={!foundUser.id}
+							onClick={send}
+							className={"mr-5"}
+						>
+							Отправить
+						</Button>
+						<span>
+							<Coins amount={500} inline /> +{" "}
+							<Coins amount={coins || 0} inline /> ={" "}
+							<Coins amount={500 + Number(coins || 0)} inline />
+						</span>
+					</div>
+				</div>
+			</div>
+		</Card>
 	)
 }
-
-export default App

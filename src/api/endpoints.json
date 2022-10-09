@@ -96,6 +96,12 @@
 		"method": "get"
 	},
 	{
+		"name": "createThanksgiving",
+		"url": "/create_thanksgiving",
+		"method": "post",
+		"params": ["user_id_to", "title", "price"]
+	},
+	{
 		"name": "uploadPhoto",
 		"url": "/upload_photo",
 		"method": "post",
