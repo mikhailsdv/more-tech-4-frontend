@@ -16,8 +16,6 @@
 Мы написали документацию к некоторым компонентам. Она будет дополняться в будущем.
 
 - [Chip](/src/components/Chip)
-- [Coins](/src/components/Coins)
-- [Staff](/src/components/Staff)
 - [Button](/src/components/Button)
 - [Link](/src/components/Link)
 
