@@ -109,7 +109,6 @@ const Root = ({className, ...rest}) => (
 const App = () => {
 	const location = useLocation()
 	const {whoami} = useApi()
-	const {enqueueSnackbar} = useSnackbar()
 
 	const [isAuthorized, setIsAuthorized] = useState(true)
 	const [isVerifyingAuthorization, setIsVerifyingAuthorization] =
@@ -155,7 +154,7 @@ const App = () => {
 			}
 			setIsVerifyingAuthorization(false)
 		})()
-	}, [isAuthorized, whoami, enqueueSnackbar])
+	}, [isAuthorized, whoami])
 
 	const title = currentPage.name || "VTB"
 

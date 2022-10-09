@@ -7,26 +7,15 @@ import useDialog from "../../../hooks/useDialog"
 import Grid from "@mui/material/Grid"
 import Card from "../../../components/Card"
 import Chip from "../../../components/Chip"
-import MenuItem from "../../../components/MenuItem"
-import Coins from "../../../components/Coins"
-import IconButton from "../../../components/IconButton"
-import RadioGroup from "../../../components/RadioGroup"
-import CheckboxGroup from "../../../components/CheckboxGroup"
 import Typography from "../../../components/Typography"
 import Tab from "../../../components/Tab"
 import Tabs from "../../../components/Tabs"
 import Course from "../../../components/Course"
 import QuestionCard from "../../../components/QuestionCard/Session"
 
-import {
-	MdOutlineDeliveryDining,
-	MdOutlineShoppingBag,
-	MdFavoriteBorder,
-} from "react-icons/md"
 import styles from "./index.module.scss"
 import test from "./test.json"
 import Button from "../../../components/Button"
-import RemoveCircleRoundedIcon from "@mui/icons-material/RemoveCircleRounded"
 
 export default function Shop(props) {
 	const [tab, setTab] = useState("unfinished")

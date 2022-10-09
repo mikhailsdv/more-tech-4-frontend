@@ -105,12 +105,7 @@ export default function Profile(props) {
 			const {error, user, balance} = idParam
 				? await who({user_id: idParam})
 				: await whoami()
-			if (error) {
-				enqueueSnackbar({
-					message: error,
-					variant: "error",
-				})
-			} else {
+			if (!error) {
 				setUserData({
 					...user,
 					coins: balance.coinsAmount,
