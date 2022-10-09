@@ -20,6 +20,7 @@ import Drawer from "../components/Drawer"
 import {TbComponents} from "react-icons/tb"
 import {FaDollarSign} from "react-icons/fa"
 import {MdQrCodeScanner, MdShoppingBasket} from "react-icons/md"
+import {TbHeartHandshake} from "react-icons/tb"
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded"
 
 import styles from "./index.module.scss"
@@ -45,6 +46,11 @@ const drawerItems = [
 		title: "Обучение",
 		url: "/learn",
 		icon: SchoolRoundedIcon,
+	},
+	{
+		title: "Поблагодарить коллегу",
+		url: "/thanks",
+		icon: TbHeartHandshake,
 	},
 ]
 
@@ -88,6 +94,13 @@ const allPages = [
 		name: "Обучение",
 		url: "/learn",
 		component: lazy(() => import("../pages/learn/App")),
+		//component: LearnPage,
+		private: true,
+	},
+	{
+		name: "Поблагодарить коллегу",
+		url: "/thanks",
+		component: lazy(() => import("../pages/thanks/App")),
 		//component: LearnPage,
 		private: true,
 	},

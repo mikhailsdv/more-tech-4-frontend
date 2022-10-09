@@ -66,23 +66,19 @@ export default function Product(props) {
 			className={classnames(styles.root, className, classes.root)}
 			{...rest}
 		>
-			<Image src={image} className={"mb-5 w-full"} />
-			<Typography variant={"subtitle1bold"}>{title}</Typography>
-			<Typography variant={"body2"} className={"mb-3"}>
-				{description}
-			</Typography>
-			<div className={styles.footer}>
-				<Coins
-					amount={price}
-					className={"mr-auto"}
-					classes={{amount: styles.hoverColor}}
-				/>
-				<IconButton className={styles.hoverColor} onClick={cart}>
-					{isCart ? <MdShoppingBag /> : <MdOutlineShoppingBag />}
-				</IconButton>
-				<IconButton className={styles.hoverColor} onClick={like}>
-					{isLiked ? <MdFavorite /> : <MdFavoriteBorder />}
-				</IconButton>
+			<Image src={image} className={styles.image} />
+			<div className={styles.info}>
+				<Typography variant={"subtitle1bold"}>{title}</Typography>
+				<Typography variant={"body2"} className={"mb-3"}>
+					{description}
+				</Typography>
+				<div className={styles.footer}>
+					<Coins
+						amount={price}
+						className={"mr-auto"}
+						classes={{amount: styles.hoverColor}}
+					/>
+				</div>
 			</div>
 		</Card>
 	)

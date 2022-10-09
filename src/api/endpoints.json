@@ -47,6 +47,55 @@
 		"params": ["private_key_from", "user_id_to", "amount"]
 	},
 	{
+		"name": "addProductToCart",
+		"url": "/add_product_to_cart",
+		"method": "post",
+		"params": ["product_id"]
+	},
+	{
+		"name": "getCart",
+		"url": "/get_cart",
+		"method": "get"
+	},
+	{
+		"name": "listLikedProducts",
+		"url": "/list_liked_products",
+		"method": "get"
+	},
+	{
+		"name": "likeProduct",
+		"url": "/like_product",
+		"method": "post",
+		"params": ["product_id"]
+	},
+	{
+		"name": "unlikeProduct",
+		"url": "/unlike_product",
+		"method": "post",
+		"params": ["product_id"]
+	},
+	{
+		"name": "removeProductFromCart",
+		"url": "/remove_product_from_cart",
+		"method": "post",
+		"params": ["product_id"]
+	},
+	{
+		"name": "listAllProducts",
+		"url": "/list_all_products",
+		"method": "get"
+	},
+	{
+		"name": "buyCart",
+		"url": "/buy_cart",
+		"method": "get"
+	},
+	{
+		"name": "listOrders",
+		"url": "/list_orders",
+		"method": "get"
+	},
+	{
 		"name": "uploadPhoto",
 		"url": "/upload_photo",
 		"method": "post",

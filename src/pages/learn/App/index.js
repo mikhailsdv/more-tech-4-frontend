@@ -36,7 +36,7 @@ export default function Shop(props) {
 				<Dialog
 					{...dialogProps}
 					maxWidth={"sm"}
-					title="Результаты тестирования"
+					title="Прздавляем! Вы набрали больше 80% и получили ачивку."
 					actions={
 						<>
 							<Button
@@ -51,12 +51,16 @@ export default function Shop(props) {
 				>
 					Всего вопросов: 25
 					<br />
-					Правильных: 18
+					Правильных: 21
 					<br />
-					Неправильных: 7<br />
+					Неправильных: 4<br />
 					<br />
-					<b>Процент: 72%</b>
+					<b>Процент: 84%</b>
 					<br />
+					<b>
+						За успешную сдачу теста вы получили ачивку «Гуру
+						безопасности» и 1500 монет
+					</b>
 				</Dialog>
 
 				<Card className={"mb-4"}>

@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	display: flex;
+	margin-bottom: 12px;
+
+	.image {
+		width: 50px;
+		height: 50px;
+		flex: none;
+		margin-right: 12px;
+	}
+	.info {
+		.footer {
+			display: flex;
+			align-items: center;
+
+			.hoverColor {
+				color: $hover-color;
+			}
+		}
+	}
+}
