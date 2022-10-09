@@ -1,4 +1,7 @@
 # VTB Staff FE
+Ссылка на сервис: https://preview.mishasaidov.com/
+Логин: ilya@vtb.ru
+Пароль: Ert852456
 
 ![Текст с описанием картинки](/src/images/1-2.png)
 
