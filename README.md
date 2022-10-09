@@ -1,4 +1,4 @@
-# VTB Staff by Kernel panic
+# VTB Staff FE
 
 ![Текст с описанием картинки](/src/images/1-2.png)
 
