@@ -15,6 +15,7 @@ import Typography from "../../../components/Typography"
 import Tab from "../../../components/Tab"
 import Tabs from "../../../components/Tabs"
 import Course from "../../../components/Course"
+import QuestionCard from "../../../components/QuestionCard/Session"
 
 import {
 	MdOutlineDeliveryDining,
@@ -31,6 +32,39 @@ export default function Shop(props) {
 	const [showTest, setShowTest] = useState(false)
 
 	if (showTest) {
+		return (
+			<>
+				<Card className={"mb-4"}>
+					<dib className={"py-1 px-2 bg-sky-600 rounded-md"}>
+						<Typography
+							variant={"caption"}
+							className={classnames("!text-white")}
+						>
+							Не завершен
+						</Typography>
+					</dib>
+					<Typography
+						variant={"h5"}
+						className={classnames("mb-5 mt-4", styles.title)}
+					>
+						Кибербезопасность в банке
+					</Typography>
+					<Typography variant={"body1"} emphasis={"medium"}>
+						Находим и эксплуатировать уязвимости ОС и веб-приложений
+					</Typography>
+				</Card>
+
+				<QuestionCard
+					isSessionPassed={false}
+					onSelectVariant={() => {}}
+					id={1}
+					is_saved={false}
+					variants={[{variant: "vvv", isRight: false}]}
+					question={"quest"}
+					index={1}
+				/>
+			</>
+		)
 	} else if (isCourseOpen) {
 		return (
 			<Grid container spacing={3}>

@@ -2,20 +2,13 @@
 
 .root {
 	position: relative;
-	#{$dark-theme} & {
-		background-color: $dark_block-color;
-	}
 
 	.title {
-		color: $light_main-color;
 		font-weight: 600;
-		#{$dark-theme} & {
-			color: $dark_regular-text-color;
-		}
 
 		.index {
-			background-color: $light_main-color;
-			color: $light_block-color;
+			background-color: $hover-color;
+			color: white;
 			padding: 1px 6px;
 			margin-right: 6px;
 			margin-bottom: 1px;
@@ -24,10 +17,6 @@
 			font-weight: 600;
 			display: inline-block;
 			vertical-align: text-bottom;
-			#{$dark-theme} & {
-				background-color: $dark_regular-text-color;
-				color: $dark_block-color;
-			}
 		}
 	}
 	.content {
@@ -52,14 +41,6 @@
 				margin-bottom: 0;
 			}
 		}
-
-		.note {
-			color: $light_placeholder-color;
-			margin-top: 6px;
-			#{$dark-theme} & {
-				color: $dark_placeholder-color;
-			}
-		}
 	}
 
 	.actions {
@@ -77,10 +58,7 @@
 		}
 
 		.icon {
-			color: $light_placeholder-color;
-			#{$dark-theme} & {
-				color: $dark_placeholder-color;
-			}
+			color: $hover-color;
 		}
 	}
 }

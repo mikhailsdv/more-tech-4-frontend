@@ -1,38 +1,19 @@
-@import "../../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 .variant {
-	color: fade-out($light_regular-text-color, 0.12);
-	background-color: $light_dark-faded-color;
-	#{$dark-theme} & {
-		color: fade-out($dark_regular-text-color, 0.12);
-		background-color: $dark_light-faded-color;
-	}
+	color: fade-out(black, 0.12);
+	background-color: rgba(10, 40, 150, 0.08);
 	&[data-active="true"] {
-		color: $light_block-color;
-		background-color: $light_main-color;
-		#{$dark-theme} & {
-			color: $dark_block-color;
-			background-color: $dark_regular-text-color;
-		}
+		color: white;
+		background-color: $hover-color;
 	}
 	&[data-state="right"] {
 		color: rgb(255, 255, 255);
 		background-color: $positive-color;
-
-		#{$dark-theme} & {
-			color: $dark_regular-text-color;
-			background-color: $positive-color;
-		}
 	}
 	&[data-state="wrong"] {
-		color: rgb(255, 255, 255);
-		color: $dark_regular-text-color;
+		color: white;
 		background-color: $error-color;
-
-		#{$dark-theme} & {
-			color: $dark_regular-text-color;
-			background-color: $error-color;
-		}
 	}
 	&[data-state="faded"] {
 		opacity: 0.5;

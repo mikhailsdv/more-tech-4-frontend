@@ -1,0 +1,8962 @@
+[
+  {
+    "index": 1,
+    "question": "Согласно руководству по оформлению кода на языке Python, отступы в управляющих и повторяющих структурах, желательно делать из такого количества пробелов, которое кратно:",
+    "id": 104296,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "6.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "question": "Для оформления строчных комментариев в языке Python применяется знак:",
+    "id": 104297,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "!;",
+        "is_right": false
+      },
+      {
+        "variant": "#!;",
+        "is_right": false
+      },
+      {
+        "variant": "*;",
+        "is_right": false
+      },
+      {
+        "variant": "//;",
+        "is_right": false
+      },
+      {
+        "variant": "#",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "question": "Для оформления блочных комментариев в языке Python применяется знак:",
+    "id": 104298,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "*;",
+        "is_right": false
+      },
+      {
+        "variant": "#.",
+        "is_right": false
+      },
+      {
+        "variant": "#!;",
+        "is_right": false
+      },
+      {
+        "variant": "//;",
+        "is_right": true
+      },
+      {
+        "variant": "!;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "question": "Для оформления специального комментария в начале программы (шебанга) в языке Python применяется знак:",
+    "id": 104299,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "#.",
+        "is_right": false
+      },
+      {
+        "variant": "*;",
+        "is_right": false
+      },
+      {
+        "variant": "!;",
+        "is_right": false
+      },
+      {
+        "variant": "#!",
+        "is_right": true
+      },
+      {
+        "variant": "//;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "question": "Для вывода информации в языке Python применяется функция:",
+    "id": 104300,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "print();",
+        "is_right": true
+      },
+      {
+        "variant": "lower().",
+        "is_right": false
+      },
+      {
+        "variant": "int();",
+        "is_right": false
+      },
+      {
+        "variant": "float();",
+        "is_right": false
+      },
+      {
+        "variant": "input();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "question": "Для ввода информации в языке Python применяется функция:",
+    "id": 104301,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float();",
+        "is_right": false
+      },
+      {
+        "variant": "lower().",
+        "is_right": false
+      },
+      {
+        "variant": "print();",
+        "is_right": false
+      },
+      {
+        "variant": "input();",
+        "is_right": true
+      },
+      {
+        "variant": "int();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "question": "Для преобразования строкового типа в целочисленный в языке Python применяется функция:",
+    "id": 104302,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float();",
+        "is_right": false
+      },
+      {
+        "variant": "lower().",
+        "is_right": false
+      },
+      {
+        "variant": "input();",
+        "is_right": false
+      },
+      {
+        "variant": "print();",
+        "is_right": false
+      },
+      {
+        "variant": "int();",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "question": "Для преобразования строкового типа в вещественный в языке Python применяется функция:",
+    "id": 104303,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float();",
+        "is_right": true
+      },
+      {
+        "variant": "input();",
+        "is_right": false
+      },
+      {
+        "variant": "lower().",
+        "is_right": false
+      },
+      {
+        "variant": "print();",
+        "is_right": false
+      },
+      {
+        "variant": "int();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "question": "Символ #! в языке Python применяется для:",
+    "id": 104304,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "ввода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "оформления строчных комментариев;",
+        "is_right": false
+      },
+      {
+        "variant": "преобразования строкового типа в целочисленный.",
+        "is_right": false
+      },
+      {
+        "variant": "оформления специального комментария в начале программы (шебанга);",
+        "is_right": true
+      },
+      {
+        "variant": "вывода информации;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "question": "Символ # в языке Python применяется для:",
+    "id": 104305,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "оформления строчных комментариев;",
+        "is_right": true
+      },
+      {
+        "variant": "вывода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "оформления специального комментария в начале программы (шебанга);",
+        "is_right": false
+      },
+      {
+        "variant": "ввода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "преобразования строкового типа в целочисленный.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "question": "Функция print() в языке Python применяется для:",
+    "id": 104306,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "вывода информации;",
+        "is_right": true
+      },
+      {
+        "variant": "преобразования строкового типа в целочисленный.",
+        "is_right": false
+      },
+      {
+        "variant": "ввода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "оформления специального комментария в начале программы (шебанга);",
+        "is_right": false
+      },
+      {
+        "variant": "оформления строчных комментариев;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "question": "Функция input() в языке Python применяется для:",
+    "id": 104307,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "преобразования строкового типа в целочисленный.",
+        "is_right": false
+      },
+      {
+        "variant": "оформления специального комментария в начале программы (шебанга);",
+        "is_right": false
+      },
+      {
+        "variant": "ввода информации;",
+        "is_right": true
+      },
+      {
+        "variant": "вывода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "оформления строчных комментариев;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "question": "Функция int() в языке Python применяется для:",
+    "id": 104308,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "вывода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "оформления строчных комментариев;",
+        "is_right": false
+      },
+      {
+        "variant": "преобразования строкового типа в целочисленный.",
+        "is_right": true
+      },
+      {
+        "variant": "оформления специального комментария в начале программы (шебанга);",
+        "is_right": false
+      },
+      {
+        "variant": "ввода информации;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "question": "Функция float() в языке Python применяется для:",
+    "id": 104309,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "оформления строчных комментариев;",
+        "is_right": false
+      },
+      {
+        "variant": "ввода информации;",
+        "is_right": false
+      },
+      {
+        "variant": "преобразования строкового типа в целочисленный.",
+        "is_right": false
+      },
+      {
+        "variant": "преобразования строкового типа в вещественный;",
+        "is_right": true
+      },
+      {
+        "variant": "вывода информации;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "question": "В языке Python для описания целых чисел применяется ключевое слово:",
+    "id": 104310,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "str.",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": true
+      },
+      {
+        "variant": "float;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "complex;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "question": "В языке Python для описания вещественных чисел применяется ключевое слово:",
+    "id": 104311,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "complex;",
+        "is_right": false
+      },
+      {
+        "variant": "float;",
+        "is_right": true
+      },
+      {
+        "variant": "str.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "question": "В языке Python для описания комплексных чисел применяется ключевое слово:",
+    "id": 104312,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "str.",
+        "is_right": false
+      },
+      {
+        "variant": "complex;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "question": "В языке Python для описания логических переменных применяется ключевое слово:",
+    "id": 104313,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "complex;",
+        "is_right": false
+      },
+      {
+        "variant": "float;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "str.",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "question": "В языке Python для описания строковых типов применяется ключевое слово:",
+    "id": 104314,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float;",
+        "is_right": false
+      },
+      {
+        "variant": "int;.",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "str",
+        "is_right": true
+      },
+      {
+        "variant": "complex;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "question": "В языке Python для описания словарей применяется ключевое слово:",
+    "id": 104315,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "list;",
+        "is_right": false
+      },
+      {
+        "variant": "set;",
+        "is_right": false
+      },
+      {
+        "variant": "bytes;",
+        "is_right": false
+      },
+      {
+        "variant": "tuple;",
+        "is_right": false
+      },
+      {
+        "variant": "dict.",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "question": "В языке Python для описания множеств применяется ключевое слово:",
+    "id": 104316,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "bytes;",
+        "is_right": false
+      },
+      {
+        "variant": "tuple;",
+        "is_right": false
+      },
+      {
+        "variant": "set;",
+        "is_right": true
+      },
+      {
+        "variant": "list;",
+        "is_right": false
+      },
+      {
+        "variant": "dict.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "question": "В языке Python для описания списков применяется ключевое слово:",
+    "id": 104317,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "list;",
+        "is_right": true
+      },
+      {
+        "variant": "tuple;",
+        "is_right": false
+      },
+      {
+        "variant": "dict.",
+        "is_right": false
+      },
+      {
+        "variant": "set;",
+        "is_right": false
+      },
+      {
+        "variant": "bytes;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "question": "В языке Python для описания последовательность чисел в диапазоне 0-255 применяется ключевое слово:",
+    "id": 104318,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "tuple;",
+        "is_right": false
+      },
+      {
+        "variant": "bytes;",
+        "is_right": true
+      },
+      {
+        "variant": "dict.",
+        "is_right": false
+      },
+      {
+        "variant": "list;",
+        "is_right": false
+      },
+      {
+        "variant": "set;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "question": "В языке Python для описания кортежей применяется ключевое слово:",
+    "id": 104319,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "dict.",
+        "is_right": false
+      },
+      {
+        "variant": "list;",
+        "is_right": false
+      },
+      {
+        "variant": "set;",
+        "is_right": false
+      },
+      {
+        "variant": "bytes;",
+        "is_right": false
+      },
+      {
+        "variant": "tuple;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "question": "В языке Python ключевое слово int применяется для описания:",
+    "id": 104320,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "целых чисел;",
+        "is_right": true
+      },
+      {
+        "variant": "комплексных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "вещественных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "строковых типов.",
+        "is_right": false
+      },
+      {
+        "variant": "логических переменных;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "question": "В языке Python ключевое слово float применяется для описания:",
+    "id": 104321,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "логических переменных;",
+        "is_right": false
+      },
+      {
+        "variant": "вещественных чисел;",
+        "is_right": true
+      },
+      {
+        "variant": "целых чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "комплексных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "строковых типов.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "question": "В языке Python ключевое слово complex применяется для описания:",
+    "id": 104322,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "строковых типов.",
+        "is_right": false
+      },
+      {
+        "variant": "логических переменных;",
+        "is_right": false
+      },
+      {
+        "variant": "вещественных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "целых чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "комплексных чисел;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "question": "В языке Python ключевое слово boolean применяется для описания:",
+    "id": 104323,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "логических переменных;",
+        "is_right": true
+      },
+      {
+        "variant": "строковых типов.",
+        "is_right": false
+      },
+      {
+        "variant": "вещественных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "целых чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "комплексных чисел;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "question": "В языке Python ключевое слово str применяется для описания:",
+    "id": 104324,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "комплексных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "вещественных чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "логических переменных;",
+        "is_right": false
+      },
+      {
+        "variant": "целых чисел;",
+        "is_right": false
+      },
+      {
+        "variant": "строковых типов.",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "question": "В языке Python ключевое слово list применяется для описания:",
+    "id": 104325,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "словарей;",
+        "is_right": false
+      },
+      {
+        "variant": "кортежей;",
+        "is_right": false
+      },
+      {
+        "variant": "списков.",
+        "is_right": true
+      },
+      {
+        "variant": "множеств;",
+        "is_right": false
+      },
+      {
+        "variant": "чисел в диапазоне от 0-255;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "question": "В языке Python ключевое слово dict применяется для описания:",
+    "id": 104326,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "списков.",
+        "is_right": false
+      },
+      {
+        "variant": "чисел в диапазоне от 0-255;",
+        "is_right": false
+      },
+      {
+        "variant": "словарей;",
+        "is_right": true
+      },
+      {
+        "variant": "кортежей;",
+        "is_right": false
+      },
+      {
+        "variant": "множеств;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 32,
+    "question": "В языке Python ключевое слово set применяется для описания:",
+    "id": 104327,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "множеств;",
+        "is_right": true
+      },
+      {
+        "variant": "чисел в диапазоне от 0-255;",
+        "is_right": false
+      },
+      {
+        "variant": "списков.",
+        "is_right": false
+      },
+      {
+        "variant": "кортежей;",
+        "is_right": false
+      },
+      {
+        "variant": "словарей;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "question": "В языке Python ключевое слово bytes применяется для описания:",
+    "id": 104328,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "списков.",
+        "is_right": false
+      },
+      {
+        "variant": "множеств;",
+        "is_right": false
+      },
+      {
+        "variant": "кортежей;",
+        "is_right": false
+      },
+      {
+        "variant": "чисел в диапазоне от 0-255;",
+        "is_right": true
+      },
+      {
+        "variant": "словарей;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "question": "В языке Python ключевое слово tuple применяется для описания:",
+    "id": 104329,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "словарей;",
+        "is_right": false
+      },
+      {
+        "variant": "множеств;",
+        "is_right": false
+      },
+      {
+        "variant": "чисел в диапазоне от 0-255;",
+        "is_right": false
+      },
+      {
+        "variant": "кортежей;",
+        "is_right": true
+      },
+      {
+        "variant": "списков.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "question": "Для определения числа в двоичной системе перед его значением ставится:",
+    "id": 104330,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0x;",
+        "is_right": false
+      },
+      {
+        "variant": "0r;",
+        "is_right": false
+      },
+      {
+        "variant": "0o.",
+        "is_right": false
+      },
+      {
+        "variant": "0b;",
+        "is_right": true
+      },
+      {
+        "variant": "0q;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "question": "Для определения числа в шестнадцатеричной системе перед его значением ставится:",
+    "id": 104331,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0o.",
+        "is_right": false
+      },
+      {
+        "variant": "0q;",
+        "is_right": false
+      },
+      {
+        "variant": "0x;",
+        "is_right": true
+      },
+      {
+        "variant": "0b;",
+        "is_right": false
+      },
+      {
+        "variant": "0r;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 37,
+    "question": "Для определения числа в восьмеричной системе перед его значением ставится:",
+    "id": 104332,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0r;",
+        "is_right": false
+      },
+      {
+        "variant": "0q;",
+        "is_right": false
+      },
+      {
+        "variant": "0b;",
+        "is_right": false
+      },
+      {
+        "variant": "0o.",
+        "is_right": true
+      },
+      {
+        "variant": "0x;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "question": "Выберите операцию логического И:",
+    "id": 104333,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": true
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "question": "Выберите операцию логического ИЛИ:",
+    "id": 104334,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": true
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "question": "Выберите операцию логического НЕ:",
+    "id": 104335,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": true
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "question": "В результате выполнения инструкции print(7**2) на консоль выведется число:",
+    "id": 104336,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "14.",
+        "is_right": false
+      },
+      {
+        "variant": "49;",
+        "is_right": true
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "question": "В результате выполнения инструкции print(7//2) на консоль выведется число:",
+    "id": 104337,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": true
+      },
+      {
+        "variant": "49;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "14.",
+        "is_right": false
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "question": "В результате выполнения инструкции print(7/2) на консоль выведется число:",
+    "id": 104338,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3.5;",
+        "is_right": true
+      },
+      {
+        "variant": "14.",
+        "is_right": false
+      },
+      {
+        "variant": "49;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "question": "В результате выполнения инструкции print(7%2) на консоль выведется число:",
+    "id": 104339,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "1",
+        "is_right": true
+      },
+      {
+        "variant": "14.",
+        "is_right": false
+      },
+      {
+        "variant": "3,5",
+        "is_right": false
+      },
+      {
+        "variant": "49;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "question": "В результате выполнения инструкции print(7*2) на консоль выведется число:",
+    "id": 104340,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      },
+      {
+        "variant": "49;",
+        "is_right": false
+      },
+      {
+        "variant": "14.",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "question": "В результате выполнения инструкции print(5**2) на консоль выведется число:",
+    "id": 104341,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "10.",
+        "is_right": false
+      },
+      {
+        "variant": "25;",
+        "is_right": true
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "2.5;",
+        "is_right": false
+      },
+      {
+        "variant": "1 ;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 47,
+    "question": "В результате выполнения инструкции print(5//2) на консоль выведется число:",
+    "id": 104342,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "2,5",
+        "is_right": false
+      },
+      {
+        "variant": "2",
+        "is_right": true
+      },
+      {
+        "variant": "25;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "question": "В результате выполнения инструкции print(5/2) на консоль выведется число:",
+    "id": 104343,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "2.5;",
+        "is_right": true
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "25;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 49,
+    "question": "В результате выполнения инструкции print(5%2) на консоль выведется число:",
+    "id": 104344,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1",
+        "is_right": true
+      },
+      {
+        "variant": "2,5",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      },
+      {
+        "variant": "25;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "question": "В результате выполнения инструкции print(5*2) на консоль выведется число:",
+    "id": 104345,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "25;",
+        "is_right": false
+      },
+      {
+        "variant": "2,5.",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "10",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 51,
+    "question": "В результате выполнения инструкции print(3**2) на консоль выведется число:",
+    "id": 104346,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "2.",
+        "is_right": false
+      },
+      {
+        "variant": "1,5",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "9",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "question": "В результате выполнения инструкции print(3//2) на консоль выведется число:",
+    "id": 104347,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1.5;",
+        "is_right": false
+      },
+      {
+        "variant": "2.",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "9;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "question": "В результате выполнения инструкции print(3/2) на консоль выведется число:",
+    "id": 104348,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "9;",
+        "is_right": false
+      },
+      {
+        "variant": "1.5;",
+        "is_right": true
+      },
+      {
+        "variant": "2.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "question": "В результате выполнения инструкции print(3%2) на консоль выведется число:",
+    "id": 104349,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "2.",
+        "is_right": false
+      },
+      {
+        "variant": "1",
+        "is_right": true
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "9;",
+        "is_right": false
+      },
+      {
+        "variant": "1,5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "question": "В результате выполнения инструкции print(3*2) на консоль выведется число:",
+    "id": 104350,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "6",
+        "is_right": true
+      },
+      {
+        "variant": "1,5;",
+        "is_right": false
+      },
+      {
+        "variant": "9;",
+        "is_right": false
+      },
+      {
+        "variant": "2.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "question": "В результате выполнения инструкций>>> с=9>>> c**=2>>> print(c)на консоль выведется число:",
+    "id": 104351,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "81",
+        "is_right": true
+      },
+      {
+        "variant": "18;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "4,5",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "question": "В результате выполнения инструкций>>> с=9>>> c//=2>>> print(c)на консоль выведется число:",
+    "id": 104352,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "18;",
+        "is_right": false
+      },
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "4,5;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "question": "В результате выполнения инструкций>>> с=9>>> c%=2>>> print(c)на консоль выведется число:",
+    "id": 104353,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "4,5",
+        "is_right": false
+      },
+      {
+        "variant": "1",
+        "is_right": true
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "question": "В результате выполнения инструкций>>> с=9>>> c/=2>>> print(c/=2)на консоль выведется число:",
+    "id": 104354,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "4.5;",
+        "is_right": true
+      },
+      {
+        "variant": "18;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "question": "В результате выполнения инструкций>>> с=9>>> c*=2>>> print(c)на консоль выведется число:",
+    "id": 104355,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "4,5;",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": true
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "question": "В результате выполнения инструкций>>> с=11>>> c**=2>>> print(c)на консоль выведется число:",
+    "id": 104356,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "22;",
+        "is_right": false
+      },
+      {
+        "variant": "5;E)5,5.",
+        "is_right": false
+      },
+      {
+        "variant": "121.",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "question": "В результате выполнения инструкций>>> с=11>>> c//=2>>> print(c)на консоль выведется число:",
+    "id": 104357,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "22;",
+        "is_right": false
+      },
+      {
+        "variant": "121.",
+        "is_right": false
+      },
+      {
+        "variant": "5;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "5,5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "question": "В результате выполнения инструкций>>> с=11>>> c%=2>>> print(c)на консоль выведется число:",
+    "id": 104358,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "22;",
+        "is_right": false
+      },
+      {
+        "variant": "121.",
+        "is_right": false
+      },
+      {
+        "variant": "1",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "5,5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "question": "В результате выполнения инструкций>>> с=11>>> c/=2>>> print(c/=2)на консоль выведется число:",
+    "id": 104359,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "22;",
+        "is_right": false
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "5.5;",
+        "is_right": true
+      },
+      {
+        "variant": "121.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 65,
+    "question": "В результате выполнения инструкций>>> с=11>>> c*=2>>> print(c)на консоль выведется число:",
+    "id": 104360,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "22;",
+        "is_right": true
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "121.",
+        "is_right": false
+      },
+      {
+        "variant": "5,5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 66,
+    "question": "В результате выполнения инструкций>>> с=13>>> c**=2>>> print(c)на консоль выведется число:",
+    "id": 104361,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "6,5.",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "169",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 67,
+    "question": "В результате выполнения инструкций>>> с=13>>> c//=2>>> print(c)на консоль выведется число:",
+    "id": 104362,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "6,5;",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "question": "В результате выполнения инструкций>>> с=13>>> c%=2>>> print(c)на консоль выведется число:",
+    "id": 104363,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": true
+      },
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "6,5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 69,
+    "question": "В результате выполнения инструкций>>> с=13>>> c/=2>>> print(c/=2)на консоль выведется число:",
+    "id": 104364,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "6.5;",
+        "is_right": true
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "169.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 70,
+    "question": "В результате выполнения инструкций>>> с=13>>> c*=2>>> print(c)на консоль выведется число:",
+    "id": 104365,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "6,5;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 71,
+    "question": "В результате выполнения инструкций>>> с=9>>> d=2>>> x=c==d>>> print(x)на консоль выведется:",
+    "id": 104366,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "and",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 72,
+    "question": "В результате выполнения инструкций>>> с=9>>> d=2>>> x=c>d>>> print(x)на консоль выведется:",
+    "id": 104367,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "and",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 73,
+    "question": "В результате выполнения инструкций>>> с=9>>> d=2>>> x=c<d>>> print(x)на консоль выведется:",
+    "id": 104368,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 74,
+    "question": "В результате выполнения инструкций>>> с=9>>> d=2>>> x=c!=d>>> print(x)на консоль выведется:",
+    "id": 104369,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 75,
+    "question": "В результате выполнения инструкций>>> с=9>>> d=2>>> x=c>=d>>> print(x)на консоль выведется:",
+    "id": 104370,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "and",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 76,
+    "question": "В результате выполнения инструкций>>> с=9>>> d=2>>> x=c<=d>>> print(x)на консоль выведется:",
+    "id": 104371,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 77,
+    "question": "В результате выполнения инструкций>>> с=3>>> d=5>>> x=c==d>>> print(x)на консоль выведется:",
+    "id": 104372,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 78,
+    "question": "В результате выполнения инструкций>>> с=3>>> d=5>>> x=c>d>>> print(x)на консоль выведется:",
+    "id": 104373,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 79,
+    "question": "В результате выполнения инструкций>>> с=3>>> d=5>>> x=c<d>>> print(x)на консоль выведется:",
+    "id": 104374,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 80,
+    "question": "В результате выполнения инструкций>>> с=3>>> d=5>>> x=c!=d>>> print(x)на консоль выведется:",
+    "id": 104375,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 81,
+    "question": "В результате выполнения инструкций>>> с=3>>> d=5>>> x=c>=d>>> print(x)на консоль выведется:",
+    "id": 104376,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 82,
+    "question": "В результате выполнения инструкций>>> с=3>>> d=5>>> x=c<=d>>> print(x)на консоль выведется:",
+    "id": 104377,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "not;",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "or.",
+        "is_right": false
+      },
+      {
+        "variant": "and;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 83,
+    "question": "В результате выполнения инструкций>>> a=2>>> b=3>>> c=4>>> x=a<b and b<c>>> print(x)на консоль выведется:",
+    "id": 104378,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 84,
+    "question": "В результате выполнения инструкций>>> a=2>>> b=3>>> c=4>>> x=not(a<b and b<c)>>> print(x)на консоль выведется:",
+    "id": 104379,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 85,
+    "question": "В результате выполнения инструкций>>> a=2>>> b=3>>> c=4>>> x=a<b or b<c>>> print(x)на консоль выведется:",
+    "id": 104380,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 86,
+    "question": "В результате выполнения инструкций>>> a=6>>> b=3>>> c=4>>> x=a<b or b<c>>> print(x)на консоль выведется:",
+    "id": 104381,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 87,
+    "question": "В результате выполнения инструкций>>> a=6>>> b=3>>> c=4>>> x=not(a<b or b<c)>>> print(x)на консоль выведется:",
+    "id": 104382,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 88,
+    "question": "В результате выполнения инструкций>>> a=6>>> b=3>>> c=4>>> x=a<b or b<c>>> print(x)на консоль выведется:",
+    "id": 104383,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 89,
+    "question": "В результате выполнения инструкций>>> a=6>>> b=3>>> c=4>>> x=not(a<b or b<c)>>> print(x)на консоль выведется:",
+    "id": 104384,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 90,
+    "question": "В результате выполнения инструкций>>> a=6>>> b=3>>> c=4>>> x= a<b and b<c>>> print(x)на консоль выведется:",
+    "id": 104385,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "False;",
+        "is_right": true
+      },
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 91,
+    "question": "В результате выполнения инструкций>>> a=6>>> b=3>>> c=4>>> x= not(a<b and b<c)>>> print(x)на консоль выведется:",
+    "id": 104386,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "float.",
+        "is_right": false
+      },
+      {
+        "variant": "False;",
+        "is_right": false
+      },
+      {
+        "variant": "int;",
+        "is_right": false
+      },
+      {
+        "variant": "boolean;",
+        "is_right": false
+      },
+      {
+        "variant": "True;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 92,
+    "question": "Выберите конструктор для создания списков:",
+    "id": 104387,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "list();",
+        "is_right": true
+      },
+      {
+        "variant": "copy();",
+        "is_right": false
+      },
+      {
+        "variant": "dict();",
+        "is_right": false
+      },
+      {
+        "variant": "union().",
+        "is_right": false
+      },
+      {
+        "variant": "set();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 93,
+    "question": "Выберите метод для добавления элементов в конец списка:",
+    "id": 104388,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "clear();",
+        "is_right": false
+      },
+      {
+        "variant": "index().",
+        "is_right": false
+      },
+      {
+        "variant": "append();",
+        "is_right": true
+      },
+      {
+        "variant": "remove();",
+        "is_right": false
+      },
+      {
+        "variant": "insert();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 94,
+    "question": "Выберите метод для добавления элемента в список по индексу:",
+    "id": 104389,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "insert();",
+        "is_right": true
+      },
+      {
+        "variant": "append();",
+        "is_right": false
+      },
+      {
+        "variant": "index()",
+        "is_right": false
+      },
+      {
+        "variant": "clear();",
+        "is_right": false
+      },
+      {
+        "variant": "remove();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 95,
+    "question": "Выберите метод для удаления элемента из списка:",
+    "id": 104390,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "append();",
+        "is_right": false
+      },
+      {
+        "variant": "insert();",
+        "is_right": false
+      },
+      {
+        "variant": "clear();",
+        "is_right": false
+      },
+      {
+        "variant": "remove();",
+        "is_right": true
+      },
+      {
+        "variant": "index().",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 96,
+    "question": "Выберите метод для удаления всех элементов из списка:",
+    "id": 104391,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "remove();",
+        "is_right": false
+      },
+      {
+        "variant": "insert();",
+        "is_right": false
+      },
+      {
+        "variant": "clear();",
+        "is_right": true
+      },
+      {
+        "variant": "index().",
+        "is_right": false
+      },
+      {
+        "variant": "append();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 97,
+    "question": "Выберите метод для возвращения индекса элемента списка:",
+    "id": 104392,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "insert();",
+        "is_right": false
+      },
+      {
+        "variant": "append();",
+        "is_right": false
+      },
+      {
+        "variant": "remove();",
+        "is_right": false
+      },
+      {
+        "variant": "clear();",
+        "is_right": false
+      },
+      {
+        "variant": "index().",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 98,
+    "question": "Выберите метод для удаления и возвращения элемента из списка по индексу:",
+    "id": 104393,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "sort();",
+        "is_right": false
+      },
+      {
+        "variant": "count();",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": false
+      },
+      {
+        "variant": "len().",
+        "is_right": false
+      },
+      {
+        "variant": "pop();",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 99,
+    "question": "Выберите метод для возвращения количества вхождений элемента в список:",
+    "id": 104394,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "len().",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": false
+      },
+      {
+        "variant": "sort();",
+        "is_right": false
+      },
+      {
+        "variant": "pop();",
+        "is_right": false
+      },
+      {
+        "variant": "count();",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 100,
+    "question": "Выберите метод для сортировки элементов в списке:",
+    "id": 104395,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "count();",
+        "is_right": false
+      },
+      {
+        "variant": "sort();",
+        "is_right": true
+      },
+      {
+        "variant": "pop();",
+        "is_right": false
+      },
+      {
+        "variant": "len().",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 101,
+    "question": "Выберите метод для расстановки элементов списка в обратном порядке:",
+    "id": 104396,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "sort();",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": true
+      },
+      {
+        "variant": "pop();",
+        "is_right": false
+      },
+      {
+        "variant": "len().",
+        "is_right": false
+      },
+      {
+        "variant": "count();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 102,
+    "question": "Выберите функцию для возвращения длины списка:",
+    "id": 104397,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "reverse();",
+        "is_right": false
+      },
+      {
+        "variant": "len().",
+        "is_right": true
+      },
+      {
+        "variant": "pop().",
+        "is_right": false
+      },
+      {
+        "variant": "sort();",
+        "is_right": false
+      },
+      {
+        "variant": "count();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 103,
+    "question": "Выберите функцию для возвращения отсортированного списка:",
+    "id": 104398,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "min();",
+        "is_right": false
+      },
+      {
+        "variant": "len().",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": false
+      },
+      {
+        "variant": "sorted();",
+        "is_right": true
+      },
+      {
+        "variant": "max();",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 104,
+    "question": "Выберите функцию для возвращения минимального элемента списка:",
+    "id": 104399,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "len().",
+        "is_right": false
+      },
+      {
+        "variant": "sorted();",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": false
+      },
+      {
+        "variant": "max();",
+        "is_right": false
+      },
+      {
+        "variant": "min();",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 105,
+    "question": "Выберите функцию для возвращения максимального элемента списка:",
+    "id": 104400,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "max();",
+        "is_right": true
+      },
+      {
+        "variant": "sorted();",
+        "is_right": false
+      },
+      {
+        "variant": "reverse();",
+        "is_right": false
+      },
+      {
+        "variant": "min();",
+        "is_right": false
+      },
+      {
+        "variant": "len().",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 106,
+    "question": "Конструктор list() используется для создания:",
+    "id": 104401,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "множеств;",
+        "is_right": false
+      },
+      {
+        "variant": "словарей;",
+        "is_right": false
+      },
+      {
+        "variant": "кортежей;",
+        "is_right": false
+      },
+      {
+        "variant": "списков;",
+        "is_right": true
+      },
+      {
+        "variant": "строк.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 107,
+    "question": "Метод append() используется для:",
+    "id": 104402,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "добавления элементов в конец списка;",
+        "is_right": true
+      },
+      {
+        "variant": "удаления всех элементов из списка;",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элемента в список по индексу;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения индекса элемента списка.",
+        "is_right": false
+      },
+      {
+        "variant": "удаления элемента из списка;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 108,
+    "question": "Метод insert() используется для:",
+    "id": 104403,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "добавления элементов в конец списка;",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элемента в список по индексу;",
+        "is_right": true
+      },
+      {
+        "variant": "возвращения индекса элемента списка.",
+        "is_right": false
+      },
+      {
+        "variant": "удаления элемента из списка;",
+        "is_right": false
+      },
+      {
+        "variant": "удаления всех элементов из списка;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 109,
+    "question": "Метод remove() используется для:",
+    "id": 104404,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "добавления элементов в конец списка;",
+        "is_right": false
+      },
+      {
+        "variant": "удаления элемента из списка;",
+        "is_right": true
+      },
+      {
+        "variant": "возвращения индекса элемента списка.",
+        "is_right": false
+      },
+      {
+        "variant": "удаления всех элементов из списка;",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элемента в список по индексу;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 110,
+    "question": "Метод clear() используется для:",
+    "id": 104405,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "возвращения индекса элемента списка.",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элементов в конец списка;",
+        "is_right": false
+      },
+      {
+        "variant": "удаления всех элементов из списка;",
+        "is_right": true
+      },
+      {
+        "variant": "удаления элемента из списка;",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элемента в список по индексу;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 111,
+    "question": "Метод index() используется для:",
+    "id": 104406,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "удаления элемента из списка;",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элемента в список по индексу;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения индекса элемента списка.",
+        "is_right": true
+      },
+      {
+        "variant": "удаления всех элементов из списка;",
+        "is_right": false
+      },
+      {
+        "variant": "добавления элементов в конец списка;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 112,
+    "question": "Метод pop() используется для:",
+    "id": 104407,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "возвращения длины списка.",
+        "is_right": false
+      },
+      {
+        "variant": "для удаления и возвращения элемента из списка по индексу;",
+        "is_right": true
+      },
+      {
+        "variant": "сортировки элементов в списке;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения количества вхождений элемента в список;",
+        "is_right": false
+      },
+      {
+        "variant": "расстановки элементов списка в обратном порядке;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 113,
+    "question": "Метод count() используется для:",
+    "id": 104408,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "расстановки элементов списка в обратном порядке;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения длины списка.",
+        "is_right": false
+      },
+      {
+        "variant": "для удаления и возвращения элемента из списка по индексу;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения количества вхождений элемента в список;",
+        "is_right": true
+      },
+      {
+        "variant": "сортировки элементов в списке;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 114,
+    "question": "Метод sort() используется для:",
+    "id": 104409,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "для удаления и возвращения элемента из списка по индексу;",
+        "is_right": false
+      },
+      {
+        "variant": "расстановки элементов списка в обратном порядке;",
+        "is_right": false
+      },
+      {
+        "variant": "сортировки элементов в списке;",
+        "is_right": true
+      },
+      {
+        "variant": "возвращения количества вхождений элемента в список;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения длины списка.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 115,
+    "question": "Метод reverse() используется для:",
+    "id": 104410,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "расстановки элементов списка в обратном порядке;",
+        "is_right": true
+      },
+      {
+        "variant": "возвращения количества вхождений элемента в список;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения длины списка.",
+        "is_right": false
+      },
+      {
+        "variant": "сортировки элементов в списке;",
+        "is_right": false
+      },
+      {
+        "variant": "для удаления и возвращения элемента из списка по индексу;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 116,
+    "question": "Функция len() используется для:",
+    "id": 104411,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "для удаления и возвращения элемента из списка по индексу",
+        "is_right": false
+      },
+      {
+        "variant": "сортировки элементов в списке;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения количества вхождений элемента в список;",
+        "is_right": false
+      },
+      {
+        "variant": "расстановки элементов списка в обратном порядке;",
+        "is_right": false
+      },
+      {
+        "variant": "возвращения длины списка.",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 117,
+    "question": "Функция sorted() используется для возвращения:",
+    "id": 104412,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "отсортированного списка;",
+        "is_right": true
+      },
+      {
+        "variant": "максимального элемента списка;",
+        "is_right": false
+      },
+      {
+        "variant": "суммы элементов списка;",
+        "is_right": false
+      },
+      {
+        "variant": "произведения элементов списка.",
+        "is_right": false
+      },
+      {
+        "variant": "минимального элемента списка;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 118,
+    "question": "Функция max() используется для возвращения:",
+    "id": 104413,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "отсортированного списка;",
+        "is_right": false
+      },
+      {
+        "variant": "минимального элемента списка;",
+        "is_right": false
+      },
+      {
+        "variant": "произведения элементов списка.",
+        "is_right": false
+      },
+      {
+        "variant": "максимального элемента списка;",
+        "is_right": true
+      },
+      {
+        "variant": "суммы элементов списка;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 119,
+    "question": "Функция min() используется для возвращения:",
+    "id": 104414,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "суммы элементов списка;",
+        "is_right": false
+      },
+      {
+        "variant": "максимального элемента списка;",
+        "is_right": false
+      },
+      {
+        "variant": "минимального элемента списка;",
+        "is_right": true
+      },
+      {
+        "variant": "произведения элементов списка.",
+        "is_right": false
+      },
+      {
+        "variant": "отсортированного списка;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 120,
+    "question": "Функция sum() используется для возвращения:",
+    "id": 104415,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "минимального элемента списка;",
+        "is_right": false
+      },
+      {
+        "variant": "отсортированного списка;",
+        "is_right": false
+      },
+      {
+        "variant": "произведения элементов списка.",
+        "is_right": false
+      },
+      {
+        "variant": "максимального элемента списка;",
+        "is_right": false
+      },
+      {
+        "variant": "суммы элементов списка;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 121,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(min(list1))fun(10,2,-2)",
+    "id": 104416,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "11.",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 122,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(list1)fun(10,2,-2)",
+    "id": 104417,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[11, 9, 7, 5, 3].",
+        "is_right": false
+      },
+      {
+        "variant": "[10, 8, 6, 4];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 2, 4, 6, 8];",
+        "is_right": false
+      },
+      {
+        "variant": "[9, 7, 5, 3];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 123,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(list1)fun(9,2,-2)",
+    "id": 104418,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[11, 9, 7, 5, 3].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[9, 7, 5, 3];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 2, 4, 6, 8];",
+        "is_right": false
+      },
+      {
+        "variant": "[10, 8, 6, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 124,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(list1)fun(0,10,2)",
+    "id": 104419,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 2, 4, 6, 8];",
+        "is_right": true
+      },
+      {
+        "variant": "[10, 8, 6, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[9, 7, 5, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[11, 9, 7, 5, 3].",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 125,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(list1)fun(0,8,2)",
+    "id": 104420,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[11, 9, 7, 5, 3].",
+        "is_right": false
+      },
+      {
+        "variant": "[10, 8, 6, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[9, 7, 5, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 2, 4, 6, 8];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 126,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(list1)fun(11,2,-2)",
+    "id": 104421,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[9, 7, 5, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[11, 9, 7, 5, 3].",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 2, 4, 6, 8];",
+        "is_right": false
+      },
+      {
+        "variant": "[10, 8, 6, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 127,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(max(list1))fun(11,2,-2)",
+    "id": 104422,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "11.",
+        "is_right": true
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "3.",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 128,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(min(list1))fun(9,2,-2)",
+    "id": 104423,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "11.",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 129,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(max(list1))fun(0,8,2)",
+    "id": 104424,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "11.",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 130,
+    "question": "Выберите правильный результат выполнения программы: def fun(a,b,c):list1 = list(range(a,b,c)) print(min(list1))fun(0,10,2)",
+    "id": 104425,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "11.",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 131,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a ** b print(p)product(11,3)",
+    "id": 104426,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "33;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "3.66666667;",
+        "is_right": false
+      },
+      {
+        "variant": "1331",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 132,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a * b print(p) product(11,3)",
+    "id": 104427,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "33;",
+        "is_right": true
+      },
+      {
+        "variant": "3.66666667;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "1331.",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 133,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a % b print(p)product(11,3)",
+    "id": 104428,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "2;",
+        "is_right": true
+      },
+      {
+        "variant": "1331.",
+        "is_right": false
+      },
+      {
+        "variant": "3.66666667;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "33;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 134,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a / b print(p)product(11.0,3)",
+    "id": 104429,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "3.66666667;",
+        "is_right": true
+      },
+      {
+        "variant": "1331.",
+        "is_right": false
+      },
+      {
+        "variant": "33;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 135,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a // b print(p) product(11,3)",
+    "id": 104430,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "33;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "3.66666667;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": true
+      },
+      {
+        "variant": "1331.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 136,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a ** b print(p)product(13,2)",
+    "id": 104431,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "169.",
+        "is_right": true
+      },
+      {
+        "variant": "6.5;",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 137,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a * b print(p) product(13,2)",
+    "id": 104432,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      },
+      {
+        "variant": "6.5;",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 138,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a % b print(p)product(13,2)",
+    "id": 104433,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "6.5;",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": true
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 139,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a / b print(p)product(13.0,2)",
+    "id": 104434,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "6.5;",
+        "is_right": true
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 140,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a // b print(p) product(13,2)",
+    "id": 104435,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "169.",
+        "is_right": false
+      },
+      {
+        "variant": "6;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "26;",
+        "is_right": false
+      },
+      {
+        "variant": "6.5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 141,
+    "question": "Выберите правильный результат выполнения функции range(1, 6, 2):",
+    "id": 104436,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": true
+      },
+      {
+        "variant": "1, 2, 3, 4;",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 142,
+    "question": "Выберите правильный результат выполнения функции range(1, 6):",
+    "id": 104437,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": true
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 143,
+    "question": "Выберите правильный результат выполнения функции range(5):",
+    "id": 104438,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0, 1, 2, 3, 4;",
+        "is_right": true
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4;",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 144,
+    "question": "Выберите правильный результат выполнения функции range(1,5):",
+    "id": 104439,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4;",
+        "is_right": true
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 145,
+    "question": "Выберите правильный результат выполнения функции range(6):",
+    "id": 104440,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1, 2, 3, 4;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 146,
+    "question": "Для получения последовательность 0, 1, 2, 3, 4 необходимо вызвать функцию:",
+    "id": 104441,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1, 6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(5);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1, 6, 2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 147,
+    "question": "Для получения последовательность 1, 2, 3, 4, 5 необходимо вызвать функцию:",
+    "id": 104442,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1, 6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1, 6, 2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 148,
+    "question": "Для получения последовательность 1, 2, 3, 4 необходимо вызвать функцию:",
+    "id": 104443,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1,5);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1, 6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1, 6, 2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 149,
+    "question": "Для получения последовательность 0, 1, 2, 3, 4, 5 необходимо вызвать функцию:",
+    "id": 104444,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1, 6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1,5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1, 6, 2).",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 150,
+    "question": "Для получения последовательность 1, 3, 5 необходимо вызвать функцию:",
+    "id": 104445,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1,5);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1, 6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1, 6, 2).",
+        "is_right": true
+      },
+      {
+        "variant": "range(5);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 151,
+    "question": "Выберите правильный результат выполнения функции range(7):",
+    "id": 104446,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5, 6;",
+        "is_right": true
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 152,
+    "question": "Выберите правильный результат выполнения функции range(1,7):",
+    "id": 104447,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5, 6;",
+        "is_right": true
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 153,
+    "question": "Выберите правильный результат выполнения функции range(6):",
+    "id": 104448,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": true
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 154,
+    "question": "Выберите правильный результат выполнения функции range(1,6):",
+    "id": 104449,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": true
+      },
+      {
+        "variant": "1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 155,
+    "question": "Выберите правильный результат выполнения функции range(1,7,2):",
+    "id": 104450,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0, 1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      },
+      {
+        "variant": "0, 1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 2, 3, 4, 5, 6;",
+        "is_right": false
+      },
+      {
+        "variant": "1, 3, 5.",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 156,
+    "question": "Для получения последовательность 1, 3, 5 необходимо вызвать функцию:",
+    "id": 104451,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1,6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,7);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,7,2).",
+        "is_right": true
+      },
+      {
+        "variant": "range(7);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 157,
+    "question": "Для получения последовательность 1, 2, 3, 4, 5 необходимо вызвать функцию:",
+    "id": 104452,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(7);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,6);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1,7,2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,7);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 158,
+    "question": "Для получения последовательность 0, 1, 2, 3, 4, 5 необходимо вызвать функцию:",
+    "id": 104453,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1,7);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1,7,2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(7);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 159,
+    "question": "Для получения последовательность 0, 1, 2, 3, 4, 5, 6 необходимо вызвать функцию:",
+    "id": 104454,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(1,7);",
+        "is_right": false
+      },
+      {
+        "variant": "range(7);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1,7,2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,6);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 160,
+    "question": "Для получения последовательность 1, 2, 3, 4, 5, 6 необходимо вызвать функцию:",
+    "id": 104455,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "range(7);",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,7);",
+        "is_right": true
+      },
+      {
+        "variant": "range(1,7,2).",
+        "is_right": false
+      },
+      {
+        "variant": "range(1,6);",
+        "is_right": false
+      },
+      {
+        "variant": "range(6);",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 161,
+    "question": "Выберите правильное условие для проверки числа x на четность:",
+    "id": 104456,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if x % 2 ! 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x % 2 != 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x % 2 = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "",
+        "is_right": false
+      },
+      {
+        "variant": "if x % 2 == 0;",
+        "is_right": true
+      },
+      {
+        "variant": "if x / 2 == 0.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 162,
+    "question": "Выберите правильное условие для проверки числа x на нечетность:",
+    "id": 104457,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if x % 2 = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x % 2 == 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x % 2 ! 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x / 2 == 0.",
+        "is_right": false
+      },
+      {
+        "variant": "if x % 2 != 0",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 163,
+    "question": "Выберите правильное условие для проверки числа x на отрицательность:",
+    "id": 104458,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if x &lt;= 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x ≥ 0.",
+        "is_right": false
+      },
+      {
+        "variant": "if x &gt;= 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &gt; 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &lt; 0;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 164,
+    "question": "Выберите правильное условие для проверки числа x на положительность:",
+    "id": 104459,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if x &gt;= 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x ≥ 0.",
+        "is_right": false
+      },
+      {
+        "variant": "if x &lt;= 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &lt; 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &gt; 0;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 165,
+    "question": "Выберите правильное условие для проверки числа x на неотрицательность:",
+    "id": 104460,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if x ≥ 0.",
+        "is_right": false
+      },
+      {
+        "variant": "if x &gt; 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &gt;= 0;",
+        "is_right": true
+      },
+      {
+        "variant": "if x &lt; 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &lt;= 0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 166,
+    "question": "Выберите правильное условие для проверки числа x на неположительность:",
+    "id": 104461,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if x &gt;= 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x &lt; 0;",
+        "is_right": false
+      },
+      {
+        "variant": "if x ≥ 0.",
+        "is_right": false
+      },
+      {
+        "variant": "if x &lt;= 0;",
+        "is_right": true
+      },
+      {
+        "variant": "if x &gt; 0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 167,
+    "question": "Фрагмент программы if x % 2 == 0 применяется для проверки числа x на:",
+    "id": 104462,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "неположительность;",
+        "is_right": false
+      },
+      {
+        "variant": "нечетность;",
+        "is_right": false
+      },
+      {
+        "variant": "четность;",
+        "is_right": true
+      },
+      {
+        "variant": "положительность.",
+        "is_right": false
+      },
+      {
+        "variant": "неотрицательность;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 168,
+    "question": "Фрагмент программы if x % 2 != 0 применяется для проверки числа x на:",
+    "id": 104463,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "нечетность;",
+        "is_right": true
+      },
+      {
+        "variant": "положительность.",
+        "is_right": false
+      },
+      {
+        "variant": "неотрицательность;",
+        "is_right": false
+      },
+      {
+        "variant": "четность;",
+        "is_right": false
+      },
+      {
+        "variant": "неположительность;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 169,
+    "question": "Фрагмент программы if x > 0 применяется для проверки числа x на:",
+    "id": 104464,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "положительность.",
+        "is_right": true
+      },
+      {
+        "variant": "нечетность;",
+        "is_right": false
+      },
+      {
+        "variant": "неположительность;",
+        "is_right": false
+      },
+      {
+        "variant": "четность;",
+        "is_right": false
+      },
+      {
+        "variant": "неотрицательность;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 170,
+    "question": "Фрагмент программы if x >= 0 применяется для проверки числа x на:",
+    "id": 104465,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "положительность.",
+        "is_right": false
+      },
+      {
+        "variant": "четность;",
+        "is_right": false
+      },
+      {
+        "variant": "нечетность;",
+        "is_right": false
+      },
+      {
+        "variant": "неположительность;",
+        "is_right": false
+      },
+      {
+        "variant": "неотрицательность;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 171,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = 0for i in range(n): s += iprint(\"s = \", s)",
+    "id": 104466,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": true
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 172,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = 0for i in range(n+1): s += iprint(\"s = \", s)",
+    "id": 104467,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": true
+      },
+      {
+        "variant": "s = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 173,
+    "question": "Выберите правильный результат выполнения программы: n = 2s=0for i in range(n+1): s+=iprint(\"S = \", s)",
+    "id": 104468,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 174,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = 0for i in range(n-1): s += iprint(\"s = \", s)",
+    "id": 104469,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 175,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = 0for i in range(n): s += iprint(\"S = \", s)",
+    "id": 104470,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "S = 1;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 176,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 1for i in range(1,n): p *= iprint(\"p = \", p)",
+    "id": 104471,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": true
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 177,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 1for i in range(1,n): p *= iprint(\"P = \", p)",
+    "id": 104472,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 178,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 1for i in range(1,n+1): p *= iprint(\"p = \", p)",
+    "id": 104473,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 179,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 1for i in range(1,n+1): p *= iprint(\"P = \", p)",
+    "id": 104474,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "P = 2;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 180,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 1for i in range(n): p *= iprint(\"p = \", p)",
+    "id": 104475,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 181,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10for i in range(1,n+1): p /= iprint(\"p = \", p)",
+    "id": 104476,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 5.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 182,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10for i in range(1,n): p /= iprint(\"p = \", p)",
+    "id": 104477,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 183,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10for i in range(1,n): p %= iprint(\"p = \", p)",
+    "id": 104478,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 184,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10for i in range(1,n): p //= iprint(\"p = \", p)",
+    "id": 104479,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 5.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 185,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10for i in range(1,n+1): p //= iprint(\"p = \", p)",
+    "id": 104480,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 5.",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 186,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20for i in range(1,n+1): p /= iprint(\"p = \", p)",
+    "id": 104481,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 187,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20for i in range(1,n): p /= iprint(\"p = \", p)",
+    "id": 104482,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 188,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20for i in range(1,n): p %= iprint(\"p = \", p)",
+    "id": 104483,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 189,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20for i in range(1,n): p //= iprint(\"p = \", p)",
+    "id": 104484,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 190,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20for i in range(1,n+1): p //= iprint(\"p = \", p)",
+    "id": 104485,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 191,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0for i in range(1,n): if i % 2 == 0:s += i print(\"s = \", s)",
+    "id": 104486,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": true
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 192,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0for i in range(1,n+2): if i % 2 != 0:s += i print(\"s = \", s)",
+    "id": 104487,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 193,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0for i in range(1,n+1): if i % 2 == 0:s += i print(\"s = \", s)",
+    "id": 104488,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 194,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0for i in range(1,n+1): if i % 2 != 0:s += i print(\"s = \", s)",
+    "id": 104489,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 195,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0for i in range(1,n-1): if i % 2 != 0:s += i print(\"s = \", s)",
+    "id": 104490,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 196,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = 1for i in range(1,n): if i % 2 == 0:p *= i print(\"p = \", p)",
+    "id": 104491,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 15.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 197,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = 1for i in range(1,n-1): if i % 2 == 0:p *= i print(\"p = \", p)",
+    "id": 104492,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 198,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = 1for i in range(1,n-2): if i % 2 != 0:p *= i print(\"p = \", p)",
+    "id": 104493,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 199,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = 1for i in range(1,n): if i % 2 != 0:p *= i print(\"p = \", p)",
+    "id": 104494,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 3;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 200,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = 1for i in range(1,n+1): if i % 2 != 0:p *= i print(\"p = \", p)",
+    "id": 104495,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 15;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 201,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей не выше главной диагонали в матрице:",
+    "id": 104496,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j &gt; i.-",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt;= i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j == i;-",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; i;-",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 202,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей ниже главной диагонали в матрице:",
+    "id": 104497,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j == i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; i.",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt;= i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; i;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 203,
+    "question": "Выберите правильное условие проверки элементов, лежащих на главной диагонали в матрице:",
+    "id": 104498,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j &gt;= i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; i.",
+        "is_right": false
+      },
+      {
+        "variant": "if j == i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j &lt; i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt;= i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 204,
+    "question": "Выберите правильное условие проверки принадлежности элемента, области лежащей выше главной диагонали в матрице:",
+    "id": 104499,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j == i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; i.",
+        "is_right": true
+      },
+      {
+        "variant": "if j &lt;= i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 205,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей не ниже главной диагонали в матрице:",
+    "id": 104500,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j &gt; i.",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j == i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt;= i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 206,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей не ниже побочной диагонали в матрице:",
+    "id": 104501,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j == n-1-i;-",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; n-1-i.-",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= n-1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt;= n-1-i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j &lt; n-1-i;-",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 207,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей ниже побочной диагонали в матрице:",
+    "id": 104502,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j &lt;= n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; n+1-i",
+        "is_right": true
+      },
+      {
+        "variant": "if j == n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; n+1-i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 208,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей выше побочной диагонали в матрице:",
+    "id": 104503,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j &gt;= n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j == n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; n+1-i.",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; n+1-i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j &lt;= n+1-i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 209,
+    "question": "Выберите правильное условие проверки принадлежности элемента области, лежащей не выше побочной диагонали в матрице:",
+    "id": 104504,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j == n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt; n+1-i.",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= n+1-i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j &lt;= n+1-i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 210,
+    "question": "Выберите правильное условие проверки элементов, лежащих на побочной диагонали в матрице:",
+    "id": 104505,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "if j &lt;= n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j == n+1-i;",
+        "is_right": true
+      },
+      {
+        "variant": "if j &gt; n+1-i.",
+        "is_right": false
+      },
+      {
+        "variant": "if j &lt; n+1-i;",
+        "is_right": false
+      },
+      {
+        "variant": "if j &gt;= n+1-i;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 211,
+    "question": "Условие j == n+1-i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104506,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "ниже побочной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "не ниже побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "на побочной диагонали;",
+        "is_right": true
+      },
+      {
+        "variant": "не выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "выше побочной диагонали;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 212,
+    "question": "Условие j >= n+1-i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104507,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "не выше побочной диагонали;",
+        "is_right": true
+      },
+      {
+        "variant": "ниже побочной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не ниже побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "на побочной диагонали;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 213,
+    "question": "Условие j > n+1-i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104508,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "на побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "ниже побочной диагонали.",
+        "is_right": true
+      },
+      {
+        "variant": "выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не ниже побочной диагонали;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 214,
+    "question": "Условие j <= n+1-i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104509,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "ниже побочной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "на побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не ниже побочной диагонали;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 215,
+    "question": "Условие j < n+1-i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104510,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "не ниже побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "ниже побочной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "не выше побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "на побочной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "выше побочной диагонали;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 216,
+    "question": "Условие j < i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104511,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "ниже главной диагонали.",
+        "is_right": true
+      },
+      {
+        "variant": "не ниже главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "на главной диагонали;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 217,
+    "question": "Условие j == i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104512,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не ниже главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "ниже главной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "не выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "на главной диагонали;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 218,
+    "question": "Условие j <= i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104513,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "на главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не ниже главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не выше главной диагонали;",
+        "is_right": true
+      },
+      {
+        "variant": "ниже главной диагонали.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 219,
+    "question": "Условие j >= i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104514,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "не ниже главной диагонали;",
+        "is_right": true
+      },
+      {
+        "variant": "ниже главной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "на главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "не выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "выше главной диагонали;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 220,
+    "question": "Условие j > i применяется для проверки элементов матрицы, лежащих:",
+    "id": 104515,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "на главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "ниже главной диагонали.",
+        "is_right": false
+      },
+      {
+        "variant": "не выше главной диагонали;",
+        "is_right": false
+      },
+      {
+        "variant": "выше главной диагонали;",
+        "is_right": true
+      },
+      {
+        "variant": "не ниже главной диагонали;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 221,
+    "question": "Выберите правильный результат выполнения программы:print(\"s = \", s)",
+    "id": 104516,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 222,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = i = 0 while i < n+1:s += i i+=1print(\"s = \", s)",
+    "id": 104517,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": true
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 223,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = i = 0 while i < n+1:s+=i i+=1print(\"S = \", s)",
+    "id": 104518,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 224,
+    "question": "Выберите правильный результат выполнения программы: n = 2s = i = 0 while i < n-1:s += i i+=1print(\"s = \", s)",
+    "id": 104519,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 225,
+    "question": "Выберите правильный результат выполнения программы:print(\"S = \", s)",
+    "id": 104520,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "S = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "S = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 3.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 226,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = i = 1 while i < n:p *= i i+=1print(\"p = \", p)",
+    "id": 104521,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 227,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = i = 1 while i < n:p *= i i+=1print(\"P = \", p)",
+    "id": 104522,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 228,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = i = 1 while i < n+1:p *= i i+=1print(\"p = \", p)",
+    "id": 104523,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 229,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = i = 1 while i < n+1:p *= i i+=1print(\"P = \", p)",
+    "id": 104524,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 230,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 1i = 0while i < n: p *= i i+=1print(\"p = \", p)",
+    "id": 104525,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "P = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": true
+      },
+      {
+        "variant": "P = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 231,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10i = 1while i < n+1: p /= ii+=1print(\"p = \", p)",
+    "id": 104526,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 5.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 232,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10i = 1while i < n: p /= i i+=1print(\"p = \", p)",
+    "id": 104527,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 233,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10i = 1while i < n: p %= i i+=1print(\"p = \", p)",
+    "id": 104528,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 234,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10i = 1while i < n: p //= i i+=1print(\"p = \", p)",
+    "id": 104529,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 235,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 10i = 1while i < n+1: p //= ii+=1print(\"p = \", p)",
+    "id": 104530,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 10;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 5.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 236,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20i = 1while i < n+1: p /= ii+=1print(\"p = \", p)",
+    "id": 104531,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 237,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20i = 1while i < n: p /= i i+=1print(\"p = \", p)",
+    "id": 104532,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 238,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20i = 1while i < n: p %= i i+=1print(\"p = \", p)",
+    "id": 104533,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 239,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20i = 1while i < n: p //= i i+=1print(\"p = \", p)",
+    "id": 104534,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 240,
+    "question": "Выберите правильный результат выполнения программы: n = 2p = 20i = 1while i < n+1: p //= ii+=1print(\"p = \", p)",
+    "id": 104535,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 10.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 20.0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 0;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 10.0;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 20;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 241,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0i = 1while i < n:if i % 2 == 0: s += ii+=1print(\"s = \", s)",
+    "id": 104536,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 242,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0i = 1while i < n+2: if i % 2 != 0:s += i i+=1print(\"s = \", s)",
+    "id": 104537,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 36;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 243,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0i = 1while i < n+1: if i % 2 == 0:s += i i+=1print(\"s = \", s)",
+    "id": 104538,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 244,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0i = 1while i < n+1: if i % 2 != 0:s += i i+=1print(\"s = \", s)",
+    "id": 104539,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 36;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 245,
+    "question": "Выберите правильный результат выполнения программы: n = 10s = 0i = 1while i < n-1: if i % 2 != 0:s += i i+=1print(\"s = \", s)",
+    "id": 104540,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "s = 36;",
+        "is_right": true
+      },
+      {
+        "variant": "s = 30;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 16;",
+        "is_right": false
+      },
+      {
+        "variant": "s = 20.",
+        "is_right": false
+      },
+      {
+        "variant": "s = 25;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 246,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = i = 1 while i < n:if i % 2 == 0: p *= ii+=1print(\"p = \", p)",
+    "id": 104541,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 247,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = i = 1 while i < n-1:if i % 2 == 0: p *= ii+=1print(\"p = \", p)",
+    "id": 104542,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      },
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 248,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = i = 1 while i < n-2:if i % 2 != 0: p *= ii+=1print(\"p = \", p)",
+    "id": 104543,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 249,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = i = 1 while i < n:if i % 2 != 0: p *= ii+=1print(\"p = \", p)",
+    "id": 104544,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 250,
+    "question": "Выберите правильный результат выполнения программы: n = 5p = i = 1 while i <= n:if i % 2 != 0: p *= ii+=1print(\"p = \", p)",
+    "id": 104545,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "p = 3;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 15;",
+        "is_right": true
+      },
+      {
+        "variant": "p = 2;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 1;",
+        "is_right": false
+      },
+      {
+        "variant": "p = 8.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 251,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5))numbers.append(5) print(numbers)",
+    "id": 104546,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 6].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 252,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5))numbers.append(6) print(numbers)",
+    "id": 104547,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 6].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 253,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.append(5) print(numbers)",
+    "id": 104548,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 6].",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 254,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4))numbers.append(4) print(numbers)",
+    "id": 104549,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 6].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 255,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,4))numbers.append(4) print(numbers)",
+    "id": 104550,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4, 6].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 256,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,4))numbers.insert(0,4) print(numbers)",
+    "id": 104551,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 0, 1, 2, 3, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 0, 1, 2, 3];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 257,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4))numbers.insert(0,4) print(numbers)",
+    "id": 104552,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 0, 1, 2, 3, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 0, 1, 2, 3];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 258,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4))numbers.insert(4,4) print(numbers)",
+    "id": 104553,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 0, 1, 2, 3];",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 259,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,4))numbers.insert(4,4) print(numbers)",
+    "id": 104554,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 0, 1, 2, 3];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 260,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.insert(0,4) print(numbers)",
+    "id": 104555,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 0, 1, 2, 3];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 261,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.insert(1,4) print(numbers)",
+    "id": 104556,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 4, 2, 3, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 262,
+    "question": "Выберите правильный результат выполнения программы:numbers = list(range(1,5)) i = numbers.index(4) print(i)",
+    "id": 104557,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 4, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 263,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.remove(4) print(numbers)",
+    "id": 104558,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 4, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 264,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.append(4) print(numbers)",
+    "id": 104559,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 4, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": true
+      },
+      {
+        "variant": "[1, 2, 3, 4, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 265,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.pop(2) print(numbers)",
+    "id": 104560,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 2, 3, 4, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 4, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 4].",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 266,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))n = numbers.count(3) print(n)",
+    "id": 104561,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "10;",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "1.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 267,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))n = sum(numbers)print(n)",
+    "id": 104562,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1.",
+        "is_right": false
+      },
+      {
+        "variant": "10;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 268,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6))n = max(numbers) print(n)",
+    "id": 104563,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "10;",
+        "is_right": false
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "1.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 269,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5))n = min(numbers) print(n)",
+    "id": 104564,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "10;",
+        "is_right": false
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      },
+      {
+        "variant": "1.",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 270,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))n = len(numbers) print(n)",
+    "id": 104565,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1.",
+        "is_right": false
+      },
+      {
+        "variant": "0;",
+        "is_right": false
+      },
+      {
+        "variant": "10;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": true
+      },
+      {
+        "variant": "5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 271,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5,0,-1))numbers.sort() print(numbers)",
+    "id": 104566,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 272,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,5))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104567,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 273,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5))numbers.sort() print(numbers)",
+    "id": 104568,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[4, 3, 2, 1].",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 274,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5,0,-1))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104569,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 3, 2, 1, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 275,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(5))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104570,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 276,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6,0,-1))numbers.sort() print(numbers)",
+    "id": 104571,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 277,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,6))numbers.sort() numbers.reverse()print(numbers)",
+    "id": 104572,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6];",
+        "is_right": true
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 278,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6))numbers.sort() print(numbers)",
+    "id": 104573,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6];",
+        "is_right": true
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 279,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6,0,-1))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104574,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6];",
+        "is_right": true
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 280,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104575,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 281,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4,0,-1))numbers.sort() print(numbers)",
+    "id": 104576,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": true
+      },
+      {
+        "variant": "[4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1].",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 282,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,4))numbers.sort()numbers.reverse() print(numbers)",
+    "id": 104577,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5];",
+        "is_right": true
+      },
+      {
+        "variant": "[3, 2, 1].",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 283,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4))numbers.sort() print(numbers)",
+    "id": 104578,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": true
+      },
+      {
+        "variant": "[3, 2, 1, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 284,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4,0,-1))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104579,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": true
+      },
+      {
+        "variant": "[4, 3, 2, 1];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 285,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(4))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104580,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 286,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6,0,-1))numbers.sort() print(numbers)",
+    "id": 104581,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4, 5, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6, 7];",
+        "is_right": true
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[7, 6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 287,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,6))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104582,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[6, 5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6, 7];",
+        "is_right": true
+      },
+      {
+        "variant": "[7, 6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 288,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6))numbers.sort() print(numbers)",
+    "id": 104583,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[7, 6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6, 7];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 289,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6,0,-1))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104584,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[7, 6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2, 3, 4, 5, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6, 7];",
+        "is_right": true
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 290,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(6))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104585,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2, 3, 4, 5, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 5, 4, 3, 2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[7, 6, 5, 4, 3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3, 4, 5, 6, 7];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 291,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(3,0,-1))numbers.sort() print(numbers)",
+    "id": 104586,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 1, 2];",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 292,
+    "question": "Выберите правильный результат выполнения программы:numbers = list(range(1,3)) numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104587,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 1, 2];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 293,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(3))numbers.sort() print(numbers)",
+    "id": 104588,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2];",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 294,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(3,0,-1))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104589,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": true
+      },
+      {
+        "variant": "[2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 1, 2];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 295,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(3))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104590,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 1, 2];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 2, 3];",
+        "is_right": true
+      },
+      {
+        "variant": "[3, 2, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[2, 1, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 296,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(7,0,-2))numbers.sort() print(numbers)",
+    "id": 104591,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 3, 5, 7];",
+        "is_right": true
+      },
+      {
+        "variant": "[7, 5, 3, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 4, 2, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 3, 1].",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 297,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(1,7,2))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104592,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 3, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 4, 2, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[7, 5, 3, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 3, 5, 7];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 298,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(0,7,2))numbers.sort() print(numbers)",
+    "id": 104593,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 3, 5, 7];",
+        "is_right": true
+      },
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[7, 5, 3, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 3, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 4, 2, 0];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 299,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(7,0,-2))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104594,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[1, 3, 5, 7];",
+        "is_right": true
+      },
+      {
+        "variant": "[7, 5, 3, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 3, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 4, 2, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 300,
+    "question": "Выберите правильный результат выполнения программы: numbers = list(range(0,7,2))numbers.sort() numbers.reverse() print(numbers)",
+    "id": 104595,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "[0, 2, 4, 6];",
+        "is_right": false
+      },
+      {
+        "variant": "[5, 3, 1].",
+        "is_right": false
+      },
+      {
+        "variant": "[7, 5, 3, 1];",
+        "is_right": false
+      },
+      {
+        "variant": "[6, 4, 2, 0];",
+        "is_right": false
+      },
+      {
+        "variant": "[1, 3, 5, 7];",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 301,
+    "question": "Выберите правильный результат выполнения программы: def summa(a,b):s = a + b print(s) summa(-3,-5)",
+    "id": 104596,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "-8;",
+        "is_right": false
+      },
+      {
+        "variant": "8;",
+        "is_right": true
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      },
+      {
+        "variant": "-2;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 302,
+    "question": "Выберите правильный результат выполнения программы: def summa(a,b):s = a + b print(s)summa(3,5)",
+    "id": 104597,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "8;",
+        "is_right": true
+      },
+      {
+        "variant": "-2;",
+        "is_right": false
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      },
+      {
+        "variant": "-8;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 303,
+    "question": "Выберите правильный результат выполнения программы: def summa(a,b):s = a + b print(s) summa(3,-5)",
+    "id": 104598,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "-8;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "-2;",
+        "is_right": false
+      },
+      {
+        "variant": "8;",
+        "is_right": true
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 304,
+    "question": "Выберите правильный результат выполнения программы: def summa(a,b):s = a + b print(s) summa(-3,5)",
+    "id": 104599,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "-2;",
+        "is_right": false
+      },
+      {
+        "variant": "8;",
+        "is_right": true
+      },
+      {
+        "variant": "-8;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "10.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 305,
+    "question": "Выберите правильный результат выполнения программы: def summa(a,b):s = a + b print(s)summa(5,5)",
+    "id": 104600,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "10.",
+        "is_right": false
+      },
+      {
+        "variant": "-2;",
+        "is_right": false
+      },
+      {
+        "variant": "8;",
+        "is_right": true
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "-8;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 306,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a ** b print(p)product(5,3)",
+    "id": 104601,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "125.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "15;",
+        "is_right": true
+      },
+      {
+        "variant": "1.666667;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 307,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a * b print(p) product(5,3)",
+    "id": 104602,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "15;",
+        "is_right": true
+      },
+      {
+        "variant": "125.",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "1.666667;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 308,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a % b print(p)product(5,3)",
+    "id": 104603,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1.666667;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "125.",
+        "is_right": false
+      },
+      {
+        "variant": "15;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 309,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a / b print(p) product(5.0,3)",
+    "id": 104604,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1.666667;",
+        "is_right": false
+      },
+      {
+        "variant": "15;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "125.",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 310,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a // b print(p)product(5,3)",
+    "id": 104605,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1.666667;",
+        "is_right": false
+      },
+      {
+        "variant": "2;",
+        "is_right": false
+      },
+      {
+        "variant": "125.",
+        "is_right": false
+      },
+      {
+        "variant": "15;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 311,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a ** bprint(p) product(7,2)",
+    "id": 104606,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "49.",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "14;",
+        "is_right": true
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 312,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a * b print(p) product(7,2)",
+    "id": 104607,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3.5;",
+        "is_right": false
+      },
+      {
+        "variant": "49.",
+        "is_right": false
+      },
+      {
+        "variant": "14;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "3;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 313,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a % b print(p)product(7,2)",
+    "id": 104608,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "49.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      },
+      {
+        "variant": "14;",
+        "is_right": true
+      }
+    ]
+  },
+  {
+    "index": 314,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a / b print(p) product(7.0,2)",
+    "id": 104609,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "14;",
+        "is_right": true
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      },
+      {
+        "variant": "49.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 315,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a // b print(p)product(7,2)",
+    "id": 104610,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "3;",
+        "is_right": false
+      },
+      {
+        "variant": "49.",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "14;",
+        "is_right": true
+      },
+      {
+        "variant": "3.5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 316,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a ** b print(p)product(9,2)",
+    "id": 104611,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "4.5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 317,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a * b print(p) product(9,2)",
+    "id": 104612,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "4.5;",
+        "is_right": false
+      },
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": true
+      },
+      {
+        "variant": "81.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 318,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a % b print(p)product(9,2)",
+    "id": 104613,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": true
+      },
+      {
+        "variant": "4.5;",
+        "is_right": false
+      },
+      {
+        "variant": "81.",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 319,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a / b print(p) product(9.0,2)",
+    "id": 104614,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      },
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": true
+      },
+      {
+        "variant": "4.5;",
+        "is_right": false
+      }
+    ]
+  },
+  {
+    "index": 320,
+    "question": "Выберите правильный результат выполнения программы: def product(a,b):p = a // b print(p)product(9,2)",
+    "id": 104615,
+    "is_saved": false,
+    "variants": [
+      {
+        "variant": "4;",
+        "is_right": false
+      },
+      {
+        "variant": "4.5;",
+        "is_right": false
+      },
+      {
+        "variant": "81.",
+        "is_right": false
+      },
+      {
+        "variant": "18;",
+        "is_right": true
+      },
+      {
+        "variant": "1;",
+        "is_right": false
+      }
+    ]
+  }
+]
