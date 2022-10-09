@@ -1,3 +1,26 @@
+# VTB Stuff
+
+Веб-сервис с элементами геймификации для вовлечения сотрудников Банка ВТБ во внутрикорпоративные активности.
+
+## Запуск
+
+1. Сделайте `git pull` этого репозитория.
+2. Уставновите [Node.js](https://nodejs.org/en/download/).
+3. Установите зависимости. Для этого из корневой папки репозитория выполните компнду `npm i`. Дождитесь окончания установки.
+4. Запустите dev-сервер. Для этого из корневой папки репозитория выполните компнду `npm start`.
+
+## Документация
+
+Мы написали документацию к некоторым компонентам. Она будет дополняться в будущем.
+
+- [Chip](/src/components/Chip)
+- [Coins](/src/components/Coins)
+- [Staff](/src/components/Staff)
+- [Button](/src/components/Button)
+- [Link](/src/components/Link)
+
+Далее идет стандартная инструкция от `create-react-app`.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
