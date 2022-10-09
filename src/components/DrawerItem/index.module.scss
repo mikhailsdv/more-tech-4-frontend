@@ -43,6 +43,8 @@ $section-icon-size: 18px;
 		.icon {
 			flex: none;
 			transition: $transition;
+			width: 16px;
+			height: 16px;
 		}
 
 		.title {

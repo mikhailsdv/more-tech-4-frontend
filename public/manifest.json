@@ -1,6 +1,6 @@
 {
-  "short_name": "VTB",
-  "name": "VTB",
+  "short_name": "VTB Staff",
+  "name": "VTB Staff",
   "icons": [
     {
       "src": "logo192.png",
@@ -16,5 +16,5 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f3f7fa",
-  "description": "Description"
+  "description": "Веб-сервис с элементами геймификации для вовлечения сотрудников Банка ВТБ во внутрикорпоративные активности."
 }

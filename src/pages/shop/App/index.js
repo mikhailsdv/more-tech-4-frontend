@@ -208,7 +208,7 @@ export default function Shop(props) {
 									lg={4}
 								>
 									<Product
-										image={`https://picsum.photos/500/500?random=${
+										image={`https://random.imagecdn.app/500/500?random=${
 											index + 1
 										}`}
 										title={"Футболка с логотипом"}

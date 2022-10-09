@@ -1,9 +1,0 @@
-@import "../../styles/variables.scss";
-
-.root {
-	color: $light_main-color;
-	font-size: 1.1em;
-	#{$dark-theme} & {
-		color: $dark_regular-text-color;
-	}
-}

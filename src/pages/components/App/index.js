@@ -4,7 +4,6 @@ import {useSnackbar} from "notistack"
 import useDialog from "../../../hooks/useDialog"
 import {sleep} from "../../../js/utils"
 
-import FadedAttention from "../../../components/FadedAttention"
 import Button from "../../../components/Button"
 import Tooltip from "../../../components/Tooltip"
 import Switch from "../../../components/Switch"

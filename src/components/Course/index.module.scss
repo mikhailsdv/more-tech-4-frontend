@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.root {
+	position: relative;
+	background-color: rgba(10, 40, 150, 0.04);
+
+	.footer {
+		display: flex;
+		align-items: center;
+
+		.hoverColor {
+			color: $hover-color;
+		}
+	}
+}
